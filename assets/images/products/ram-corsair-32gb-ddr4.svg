@@ -1,0 +1,96 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="46%" r="55%">
+      <stop offset="0%" stop-color="#64748B" stop-opacity="0.18"/>
+      <stop offset="55%" stop-color="#151C28" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0B0D10" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="metalBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3646"/>
+      <stop offset="45%" stop-color="#1B212C"/>
+      <stop offset="100%" stop-color="#10141B"/>
+    </linearGradient>
+    <linearGradient id="silverTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="darkAnodized" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242C3A"/>
+      <stop offset="100%" stop-color="#0E1218"/>
+    </linearGradient>
+    <linearGradient id="copperPipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <linearGradient id="goldPins" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Backdrop -->
+  <rect width="800" height="600" fill="#0B0D10"/>
+  <rect width="800" height="600" fill="url(#studioGlow)"/>
+  <rect width="800" height="600" fill="url(#techGrid)"/>
+
+  <!-- Studio Floor Pedestal Reflection Line -->
+  <ellipse cx="400" cy="525" rx="270" ry="22" fill="#050709" opacity="0.8"/>
+  <line x1="80" y1="525" x2="720" y2="525" stroke="#1E293B" stroke-width="1"/>
+  <line x1="250" y1="525" x2="550" y2="525" stroke="#64748B" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Top Technical Telemetry Bar -->
+  <g opacity="0.85">
+    <rect x="28" y="24" width="140" height="24" rx="4" fill="#131822" stroke="#263042" stroke-width="1"/>
+    <circle cx="42" cy="36" r="3.5" fill="#64748B"/>
+    <text x="53" y="40" fill="#CBD5E1" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2">MEMORY (RAM)</text>
+    <text x="772" y="40" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1.5">BYTEFORGE // STUDIO SPEC</text>
+  </g>
+
+  <!-- Main Hardware Render -->
+  <g filter="url(#dropShadow)">
+                <!-- Module 1 (Back) -->
+            <g transform="translate(30, -28)">
+              <rect x="155" y="308" width="450" height="16" rx="2" fill="url(#goldPins)"/>
+              <rect x="370" y="308" width="10" height="16" fill="#0B0D10"/>
+              <path d="M145 215 L175 198 H585 L615 215 V310 H145 Z" fill="#18202C" stroke="#475569" stroke-width="2"/>
+              <rect x="165" y="205" width="430" height="12" rx="3" fill="url(#silverTrim)" opacity="0.85"/>
+              <line x1="175" y1="228" x2="585" y2="228" stroke="#64748B" stroke-width="2.5"/>
+            </g>
+            <!-- Module 2 (Front) -->
+            <g transform="translate(-20, 35)">
+              <rect x="155" y="308" width="450" height="16" rx="2" fill="url(#goldPins)"/>
+              <rect x="370" y="308" width="10" height="16" fill="#0B0D10"/>
+              <path d="M145 215 L175 198 H585 L615 215 V310 H145 Z" fill="url(#metalBody)" stroke="#64748B" stroke-width="2.5"/>
+              <rect x="165" y="203" width="430" height="14" rx="3" fill="url(#silverTrim)"/>
+              <line x1="170" y1="226" x2="590" y2="226" stroke="#64748B" stroke-width="3"/>
+              <!-- Machined Heatspreader Fins -->
+              <g stroke="#334155" stroke-width="2">
+                <line x1="200" y1="240" x2="215" y2="295"/><line x1="220" y1="240" x2="235" y2="295"/><line x1="240" y1="240" x2="255" y2="295"/>
+                <line x1="520" y1="240" x2="505" y2="295"/><line x1="540" y1="240" x2="525" y2="295"/><line x1="560" y1="240" x2="545" y2="295"/>
+              </g>
+              <rect x="295" y="242" width="170" height="44" rx="6" fill="#0F172A" stroke="#64748B" stroke-width="1.2"/>
+              <text x="380" y="262" text-anchor="middle" fill="#F8FAFC" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">VENGEANCE D4</text>
+              <text x="380" y="278" text-anchor="middle" fill="#94A3B8" font-family="Inter, monospace" font-size="11" font-weight="600">DDR4-3600 CL18</text>
+            </g>
+  </g>
+
+  <!-- Bottom Caption Overlay -->
+  <g>
+    <text x="32" y="564" fill="#F8FAFC" font-family="Space Grotesk, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">CORSAIR VENGEANCE LPX 32GB DDR4-3600</text>
+    <text x="32" y="583" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">32GB (2x16GB) DDR4-3600 CL18 | Pure Aluminum Heatspreader</text>
+    <text x="768" y="576" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1">ILLUSTRATIVE HARDWARE RENDER</text>
+  </g>
+</svg>

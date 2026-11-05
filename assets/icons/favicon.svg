@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="#0B0D10" stroke="#2563EB" stroke-width="2.5"/>
+  <path d="M18 16 H36 L44 24 V29 L38 32 L45 36 V44 L37 48 H18 Z" fill="none" stroke="url(#metalGrad)" stroke-width="2" opacity="0.25"/>
+  <path d="M20 18 H35 L40 23 V27 L35 30 H20 Z" fill="url(#bfGrad)"/>
+  <path d="M20 34 H37 L42 39 V43 L37 46 H20 Z" fill="url(#metalGrad)"/>
+  <rect x="14" y="18" width="3" height="28" rx="1.5" fill="#3B82F6"/>
+  <circle cx="48" cy="18" r="2.5" fill="#3B82F6"/>
+</svg>

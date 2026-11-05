@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#0B0D10"/>
+  <rect x="80" y="110" width="640" height="360" rx="12" fill="#131924" stroke="#2D384B" stroke-width="2"/>
+  <rect x="115" y="145" width="260" height="135" rx="8" fill="#0F141D" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="135" y="175" fill="#F8FAFC" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">THERMAL DISSIPATION CURVE</text>
+  <polyline points="135,255 185,245 235,220 285,195 345,185" fill="none" stroke="#3B82F6" stroke-width="3"/>
+  <polyline points="135,265 185,260 235,248 285,235 345,228" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="4,4"/>
+  <rect x="405" y="145" width="280" height="135" rx="8" fill="#0F141D" stroke="#334155" stroke-width="1.5"/>
+  <text x="425" y="175" fill="#F8FAFC" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">POWER &amp; SIGNAL TOPOLOGY</text>
+  <rect x="425" y="195" width="240" height="14" rx="4" fill="#1E293B"/>
+  <rect x="425" y="195" width="195" height="14" rx="4" fill="#3B82F6"/>
+  <text x="425" y="232" fill="#94A3B8" font-family="Inter, monospace" font-size="11">VRM / Power Phase Efficiency: 94.2%</text>
+  <text x="425" y="252" fill="#94A3B8" font-family="Inter, monospace" font-size="11">Acoustic Floor: &lt; 28.4 dBA @ Typical Load</text>
+  <rect x="115" y="305" width="570" height="130" rx="8" fill="#0F141D" stroke="#334155" stroke-width="1.5"/>
+  <text x="135" y="335" fill="#F8FAFC" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">INTERFACE &amp; HIGH-SPEED BUS ARCHITECTURE</text>
+  <g fill="#1E293B" stroke="#3B82F6" stroke-width="1.5">
+    <rect x="135" y="355" width="115" height="54" rx="6"/>
+    <rect x="275" y="355" width="115" height="54" rx="6"/>
+    <rect x="415" y="355" width="115" height="54" rx="6"/>
+    <rect x="555" y="355" width="110" height="54" rx="6"/>
+  </g>
+  <text x="192" y="386" text-anchor="middle" fill="#F8FAFC" font-family="Space Grotesk, monospace" font-size="11" font-weight="700">PCIe 5.0 / GEN5</text>
+  <text x="332" y="386" text-anchor="middle" fill="#F8FAFC" font-family="Space Grotesk, monospace" font-size="11" font-weight="700">DIRECT COPPER</text>
+  <text x="472" y="386" text-anchor="middle" fill="#F8FAFC" font-family="Space Grotesk, monospace" font-size="11" font-weight="700">LOW-ESR VRM</text>
+  <text x="610" y="386" text-anchor="middle" fill="#F8FAFC" font-family="Space Grotesk, monospace" font-size="11" font-weight="700">ESD GUARD</text>
+  <text x="40" y="555" fill="#F8FAFC" font-family="Space Grotesk, sans-serif" font-size="16" font-weight="700">THERMAL &amp; ELECTRICAL ARCHITECTURE TELEMETRY</text>
+  <text x="40" y="576" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">Internal sub-system layout, thermal curve &amp; bus interface profile (Illustrative)</text>
+</svg>

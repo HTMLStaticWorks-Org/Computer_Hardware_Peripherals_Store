@@ -1,0 +1,110 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="46%" r="55%">
+      <stop offset="0%" stop-color="#64748B" stop-opacity="0.18"/>
+      <stop offset="55%" stop-color="#151C28" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0B0D10" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="metalBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3646"/>
+      <stop offset="45%" stop-color="#1B212C"/>
+      <stop offset="100%" stop-color="#10141B"/>
+    </linearGradient>
+    <linearGradient id="silverTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="darkAnodized" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242C3A"/>
+      <stop offset="100%" stop-color="#0E1218"/>
+    </linearGradient>
+    <linearGradient id="copperPipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <linearGradient id="goldPins" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Backdrop -->
+  <rect width="800" height="600" fill="#0B0D10"/>
+  <rect width="800" height="600" fill="url(#studioGlow)"/>
+  <rect width="800" height="600" fill="url(#techGrid)"/>
+
+  <!-- Studio Floor Pedestal Reflection Line -->
+  <ellipse cx="400" cy="525" rx="270" ry="22" fill="#050709" opacity="0.8"/>
+  <line x1="80" y1="525" x2="720" y2="525" stroke="#1E293B" stroke-width="1"/>
+  <line x1="250" y1="525" x2="550" y2="525" stroke="#64748B" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Top Technical Telemetry Bar -->
+  <g opacity="0.85">
+    <rect x="28" y="24" width="140" height="24" rx="4" fill="#131822" stroke="#263042" stroke-width="1"/>
+    <circle cx="42" cy="36" r="3.5" fill="#64748B"/>
+    <text x="53" y="40" fill="#CBD5E1" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2">POWER SUPPLY</text>
+    <text x="772" y="40" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1.5">BYTEFORGE // STUDIO SPEC</text>
+  </g>
+
+  <!-- Main Hardware Render -->
+  <g filter="url(#dropShadow)">
+                <!-- Main PSU Chassis -->
+            <rect x="175" y="165" width="450" height="265" rx="14" fill="url(#metalBody)" stroke="#475569" stroke-width="2.5"/>
+            <!-- Acoustic Hex Grille &amp; Fan (Left) -->
+                <g>
+      <circle cx="310" cy="300" r="92" fill="#0B0E14" stroke="#2E3846" stroke-width="3"/>
+      <circle cx="310" cy="300" r="88" fill="none" stroke="#64748B" stroke-width="1" stroke-dasharray="18,8" opacity="0.55"/>
+      <g stroke="#283242" stroke-width="5" stroke-linecap="round" opacity="0.9">
+        <path d="M 310 300 Q 346.8 272.4 379 254"/>
+        <path d="M 310 300 Q 356 318.4 388.2 323"/>
+        <path d="M 310 300 Q 328.4 346 342.2 375.44"/>
+        <path d="M 310 300 Q 282.4 336.8 264 369"/>
+        <path d="M 310 300 Q 264 309.2 231.8 313.8"/>
+        <path d="M 310 300 Q 273.2 272.4 245.6 246.64"/>
+        <path d="M 310 300 Q 300.8 254 296.2 220.88"/>
+        <path d="M 310 300 Q 337.6 254 342.2 224.56"/>
+      </g>
+      <circle cx="310" cy="300" r="31.28" fill="#18202C" stroke="url(#silverTrim)" stroke-width="2"/>
+      <circle cx="310" cy="300" r="11.04" fill="#0F172A" stroke="#64748B" stroke-width="1.5"/>
+    </g>
+            <!-- Modular Connector Bank &amp; Spec Table (Right) -->
+            <rect x="430" y="185" width="175" height="225" rx="8" fill="#0E131B" stroke="#334155" stroke-width="1.5"/>
+            <rect x="445" y="200" width="145" height="44" rx="5" fill="#161F2E" stroke="#64748B" stroke-width="1.2"/>
+            <text x="517" y="220" text-anchor="middle" fill="#F8FAFC" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="700" letter-spacing="1">MWE 650W V2</text>
+            <text x="517" y="236" text-anchor="middle" fill="#64748B" font-family="Space Grotesk, monospace" font-size="10" font-weight="700" letter-spacing="1.5">650W // MODULAR</text>
+            <!-- Modular Ports (12V-2x6, CPU/PCIe, ATX 24-pin) -->
+            <g fill="#090C10" stroke="#475569" stroke-width="1.5">
+              <rect x="448" y="262" width="52" height="24" rx="3" stroke="#64748B"/>
+              <rect x="512" y="262" width="75" height="24" rx="3"/>
+              <rect x="448" y="300" width="40" height="24" rx="3"/>
+              <rect x="498" y="300" width="40" height="24" rx="3"/>
+              <rect x="548" y="300" width="40" height="24" rx="3"/>
+              <rect x="448" y="338" width="40" height="24" rx="3"/>
+              <rect x="498" y="338" width="40" height="24" rx="3"/>
+              <rect x="548" y="338" width="40" height="24" rx="3"/>
+            </g>
+            <text x="474" y="278" text-anchor="middle" fill="#E2E8F0" font-family="Inter, monospace" font-size="8" font-weight="700">12V-2x6</text>
+            <text x="550" y="278" text-anchor="middle" fill="#94A3B8" font-family="Inter, monospace" font-size="8">24-PIN ATX</text>
+            <text x="517" y="388" text-anchor="middle" fill="#64748B" font-family="Space Grotesk, monospace" font-size="10" letter-spacing="1.5">ATX 3.1 // PCIe 5.1</text>
+  </g>
+
+  <!-- Bottom Caption Overlay -->
+  <g>
+    <text x="32" y="564" fill="#F8FAFC" font-family="Space Grotesk, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">COOLER MASTER MWE GOLD 650 V2 FULL MODULAR</text>
+    <text x="32" y="583" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">650W 80 PLUS Gold | 120mm HDB Silent Fan | Flat Black Cables</text>
+    <text x="768" y="576" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1">ILLUSTRATIVE HARDWARE RENDER</text>
+  </g>
+</svg>

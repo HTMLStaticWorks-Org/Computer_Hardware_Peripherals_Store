@@ -1,0 +1,145 @@
+/* ==========================================================================
+   BYTEFORGE — DESIGN TOKENS & THEME SYSTEM
+   Brand Tagline: Build Better. Perform Beyond.
+   Typography: Space Grotesk (Headings) + Inter (Body & UI)
+   ========================================================================== */
+
+:root,
+[data-theme="dark"] {
+  /* Core Surfaces — Graphite Black & Deep Charcoal */
+  --bg-primary: #0B0D10;
+  --bg-secondary: #131720;
+  --bg-tertiary: #1A202C;
+  --bg-elevated: #1F2635;
+  --bg-glass: rgba(11, 13, 16, 0.88);
+  --bg-subtle: rgba(255, 255, 255, 0.03);
+  --bg-hover: rgba(59, 130, 246, 0.08);
+
+  /* Typography & Metallic Highlights */
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-dim: #64748B;
+  --metallic-silver: #E2E8F0;
+  --metallic-border: #334155;
+
+  /* Interaction Accents — Electric Blue */
+  --accent-primary: #3B82F6;
+  --accent-hover: #2563EB;
+  --accent-active: #1D4ED8;
+  --accent-soft: rgba(59, 130, 246, 0.14);
+  --accent-border: rgba(59, 130, 246, 0.42);
+  --accent-contrast: #FFFFFF;
+
+  /* Status & Compatibility Tokens */
+  --status-success: #10B981;
+  --status-success-bg: rgba(16, 185, 129, 0.12);
+  --status-warning: #F59E0B;
+  --status-warning-bg: rgba(245, 158, 11, 0.12);
+  --status-danger: #EF4444;
+  --status-danger-bg: rgba(239, 68, 68, 0.12);
+
+  /* Borders & Dividers — Muted Steel Grey */
+  --border-subtle: #1E2532;
+  --border-default: #283142;
+  --border-strong: #3B475E;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 44px rgba(0, 0, 0, 0.65);
+  --shadow-focus: 0 0 0 3px rgba(59, 130, 246, 0.35);
+
+  /* Image Card Surface */
+  --card-media-bg: #0D1016;
+}
+
+[data-theme="light"] {
+  /* Core Surfaces — Cool White & Clean Slate */
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #F1F5F9;
+  --bg-elevated: #FFFFFF;
+  --bg-glass: rgba(248, 250, 252, 0.92);
+  --bg-subtle: rgba(15, 23, 42, 0.03);
+  --bg-hover: rgba(37, 99, 235, 0.06);
+
+  /* Typography — High Contrast Graphite on Cool White */
+  --text-primary: #0F172A;
+  --text-secondary: #1E293B;
+  --text-muted: #475569;
+  --text-dim: #64748B;
+  --metallic-silver: #334155;
+  --metallic-border: #CBD5E1;
+
+  /* Interaction Accents — Electric Blue */
+  --accent-primary: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-active: #1E40AF;
+  --accent-soft: rgba(37, 99, 235, 0.1);
+  --accent-border: rgba(37, 99, 235, 0.35);
+  --accent-contrast: #FFFFFF;
+
+  /* Status & Compatibility Tokens */
+  --status-success: #059669;
+  --status-success-bg: rgba(5, 150, 105, 0.1);
+  --status-warning: #D97706;
+  --status-warning-bg: rgba(217, 119, 6, 0.1);
+  --status-danger: #DC2626;
+  --status-danger-bg: rgba(220, 38, 38, 0.1);
+
+  /* Borders & Dividers */
+  --border-subtle: #E2E8F0;
+  --border-default: #CBD5E1;
+  --border-strong: #94A3B8;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 20px 38px -10px rgba(15, 23, 42, 0.14);
+  --shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.25);
+
+  /* Image Card Surface stays dark-studio framed for authentic hardware presentation */
+  --card-media-bg: #0E1218;
+}
+
+/* Typography & 4px/8px Spacing Scale */
+:root {
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* 4px / 8px Spacing System */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-20: 5rem;    /* 80px */
+  --space-24: 6rem;    /* 96px */
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Layout */
+  --container-max: 1360px;
+  --navbar-height: 76px;
+  --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 64px;
+  }
+}
+

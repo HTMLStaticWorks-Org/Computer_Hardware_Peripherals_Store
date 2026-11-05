@@ -1,0 +1,86 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="46%" r="55%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.18"/>
+      <stop offset="55%" stop-color="#151C28" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0B0D10" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="metalBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3646"/>
+      <stop offset="45%" stop-color="#1B212C"/>
+      <stop offset="100%" stop-color="#10141B"/>
+    </linearGradient>
+    <linearGradient id="silverTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="darkAnodized" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242C3A"/>
+      <stop offset="100%" stop-color="#0E1218"/>
+    </linearGradient>
+    <linearGradient id="copperPipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <linearGradient id="goldPins" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Backdrop -->
+  <rect width="800" height="600" fill="#0B0D10"/>
+  <rect width="800" height="600" fill="url(#studioGlow)"/>
+  <rect width="800" height="600" fill="url(#techGrid)"/>
+
+  <!-- Studio Floor Pedestal Reflection Line -->
+  <ellipse cx="400" cy="525" rx="270" ry="22" fill="#050709" opacity="0.8"/>
+  <line x1="80" y1="525" x2="720" y2="525" stroke="#1E293B" stroke-width="1"/>
+  <line x1="250" y1="525" x2="550" y2="525" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Top Technical Telemetry Bar -->
+  <g opacity="0.85">
+    <rect x="28" y="24" width="140" height="24" rx="4" fill="#131822" stroke="#263042" stroke-width="1"/>
+    <circle cx="42" cy="36" r="3.5" fill="#3B82F6"/>
+    <text x="53" y="40" fill="#CBD5E1" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2">WEBCAM</text>
+    <text x="772" y="40" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1.5">BYTEFORGE // STUDIO SPEC</text>
+  </g>
+
+  <!-- Main Hardware Render -->
+  <g filter="url(#dropShadow)">
+                <!-- Monitor Stand Base &amp; Arm -->
+            <polygon points="310,485 490,485 520,502 280,502" fill="url(#silverTrim)"/>
+            <rect x="382" y="395" width="36" height="92" rx="4" fill="url(#metalBody)" stroke="#475569" stroke-width="2"/>
+            <!-- Ultra-Thin Bezel Display Frame -->
+            <rect x="135" y="130" width="530" height="280" rx="10" fill="#0B0E14" stroke="url(#silverTrim)" stroke-width="2.5"/>
+            <rect x="145" y="140" width="510" height="256" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+            <!-- On-Screen Technical Visual &amp; Refresh Rate Telemetry -->
+            <circle cx="400" cy="268" r="85" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.45"/>
+            <circle cx="400" cy="268" r="55" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="6,4" opacity="0.6"/>
+            <polygon points="145,396 340,285 470,335 655,210 655,396" fill="#3B82F6" opacity="0.18"/>
+            <polyline points="145,355 290,275 425,310 560,215 655,235" fill="none" stroke="#3B82F6" stroke-width="3"/>
+            <rect x="168" y="162" width="155" height="48" rx="6" fill="#0B0D10" opacity="0.88" stroke="#334155" stroke-width="1"/>
+            <text x="182" y="183" fill="#F8FAFC" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">MX BRIO 4K</text>
+            <text x="182" y="200" fill="#3B82F6" font-family="Inter, monospace" font-size="10" font-weight="600">4K UHD // USB-C</text>
+  </g>
+
+  <!-- Bottom Caption Overlay -->
+  <g>
+    <text x="32" y="564" fill="#F8FAFC" font-family="Space Grotesk, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">LOGITECH MX BRIO ULTRA HD 4K WEBCAM</text>
+    <text x="32" y="583" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">4K 30fps / 1080p 60fps | Sony STARVIS Sensor | Anodized Aluminum Body</text>
+    <text x="768" y="576" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1">ILLUSTRATIVE HARDWARE RENDER</text>
+  </g>
+</svg>

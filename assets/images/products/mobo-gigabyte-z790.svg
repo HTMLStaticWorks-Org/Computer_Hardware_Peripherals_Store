@@ -1,0 +1,100 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="46%" r="55%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.18"/>
+      <stop offset="55%" stop-color="#151C28" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0B0D10" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="metalBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3646"/>
+      <stop offset="45%" stop-color="#1B212C"/>
+      <stop offset="100%" stop-color="#10141B"/>
+    </linearGradient>
+    <linearGradient id="silverTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="darkAnodized" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242C3A"/>
+      <stop offset="100%" stop-color="#0E1218"/>
+    </linearGradient>
+    <linearGradient id="copperPipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <linearGradient id="goldPins" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Backdrop -->
+  <rect width="800" height="600" fill="#0B0D10"/>
+  <rect width="800" height="600" fill="url(#studioGlow)"/>
+  <rect width="800" height="600" fill="url(#techGrid)"/>
+
+  <!-- Studio Floor Pedestal Reflection Line -->
+  <ellipse cx="400" cy="525" rx="270" ry="22" fill="#050709" opacity="0.8"/>
+  <line x1="80" y1="525" x2="720" y2="525" stroke="#1E293B" stroke-width="1"/>
+  <line x1="250" y1="525" x2="550" y2="525" stroke="#2563EB" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Top Technical Telemetry Bar -->
+  <g opacity="0.85">
+    <rect x="28" y="24" width="140" height="24" rx="4" fill="#131822" stroke="#263042" stroke-width="1"/>
+    <circle cx="42" cy="36" r="3.5" fill="#2563EB"/>
+    <text x="53" y="40" fill="#CBD5E1" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2">MOTHERBOARD</text>
+    <text x="772" y="40" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1.5">BYTEFORGE // STUDIO SPEC</text>
+  </g>
+
+  <!-- Main Hardware Render -->
+  <g filter="url(#dropShadow)">
+                <!-- Main ATX PCB -->
+            <rect x="220" y="115" width="360" height="370" rx="10" fill="#111621" stroke="#334155" stroke-width="2.5"/>
+            <!-- Rear I/O &amp; Massive VRM Heatsink Armor -->
+            <rect x="232" y="130" width="82" height="165" rx="6" fill="url(#metalBody)" stroke="url(#silverTrim)" stroke-width="1.5"/>
+            <line x1="246" y1="145" x2="246" y2="280" stroke="#2563EB" stroke-width="3"/>
+            <text x="275" y="220" text-anchor="middle" fill="#CBD5E1" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700" transform="rotate(-90 275 220)" letter-spacing="2.5">Z790 MASTER</text>
+            <!-- Top VRM Heatsink -->
+            <rect x="322" y="128" width="135" height="52" rx="5" fill="url(#metalBody)" stroke="#475569" stroke-width="1.5"/>
+            <!-- CPU Socket Assembly -->
+            <rect x="342" y="196" width="92" height="92" rx="8" fill="#1E293B" stroke="url(#silverTrim)" stroke-width="2.5"/>
+            <rect x="356" y="210" width="64" height="64" rx="4" fill="#0F172A" stroke="#2563EB" stroke-width="1.5"/>
+            <!-- 4x DDR5 DIMM Slots -->
+            <g fill="#0F172A" stroke="#475569" stroke-width="1.2">
+              <rect x="468" y="145" width="12" height="150" rx="2"/>
+              <rect x="488" y="145" width="12" height="150" rx="2" stroke="#2563EB"/>
+              <rect x="508" y="145" width="12" height="150" rx="2"/>
+              <rect x="528" y="145" width="12" height="150" rx="2" stroke="#2563EB"/>
+            </g>
+            <!-- Steel Reinforced PCIe 5.0 x16 Slots &amp; M.2 Thermal Shields -->
+            <rect x="255" y="315" width="215" height="24" rx="4" fill="url(#metalBody)" stroke="#64748B" stroke-width="1"/>
+            <text x="362" y="331" text-anchor="middle" fill="#94A3B8" font-family="Space Grotesk, monospace" font-size="9" letter-spacing="2">PCIe 5.0 M.2 SHIELD FROZR</text>
+            <rect x="255" y="348" width="210" height="12" rx="2" fill="#0F172A" stroke="url(#silverTrim)" stroke-width="2"/>
+            <rect x="255" y="370" width="295" height="42" rx="6" fill="url(#metalBody)" stroke="#475569" stroke-width="1.5"/>
+            <rect x="480" y="320" width="80" height="92" rx="8" fill="#1B2230" stroke="#2563EB" stroke-width="1.5"/>
+            <text x="520" y="370" text-anchor="middle" fill="#F8FAFC" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700" letter-spacing="1">LGA1700 // E-ATX</text>
+            <rect x="255" y="425" width="210" height="12" rx="2" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+            <!-- CMOS Battery &amp; Audio Capacitors -->
+            <circle cx="290" cy="455" r="12" fill="url(#silverTrim)" stroke="#334155" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom Caption Overlay -->
+  <g>
+    <text x="32" y="564" fill="#F8FAFC" font-family="Space Grotesk, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">GIGABYTE Z790 AORUS MASTER X CLASS</text>
+    <text x="32" y="583" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">Socket LGA1700 | DDR5 | E-ATX Form Factor | Wi-Fi 7 &amp; 10GbE</text>
+    <text x="768" y="576" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1">ILLUSTRATIVE HARDWARE RENDER</text>
+  </g>
+</svg>

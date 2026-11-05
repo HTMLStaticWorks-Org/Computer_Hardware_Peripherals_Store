@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Catalogue &mdash; BYTEFORGE Computer Hardware &amp; Peripherals Store</title>
+  <meta name="description" content="Browse BYTEFORGE's hardware catalogue of processors, graphics cards, motherboards, DDR5 memory, NVMe SSDs, power supplies, PC cabinets, coolers, and gaming peripherals.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body id="bf-catalogue-page">
+
+  <!-- ==================== MANDATORY STICKY NAVBAR ==================== -->
+  <header class="site-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="BYTEFORGE Home">
+        <img src="assets/icons/favicon.svg" alt="" class="brand-logo-mark" width="38" height="38">
+        <div class="brand-logo-text">
+          <span class="brand-name">BYTE<span>FORGE</span></span>
+          <span class="brand-tagline-mini">Build Better. Perform Beyond.</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Shopping Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" data-dropdown-toggle aria-expanded="false">
+              Home
+            </a>
+            <div class="dropdown-panel dropdown-sm">
+              <div class="dropdown-col-title">Homepage Layouts</div>
+              <ul class="dropdown-list">
+                <li>
+                  <a href="index.html" class="dropdown-link">
+                    <div>
+                      <strong>Home - Hardware Retail</strong>
+                      <span class="dropdown-link-desc">Product discovery &amp; catalogue shopping</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="home-2.html" class="dropdown-link">
+                    <div>
+                      <strong>Home-2 - Custom PC &amp; Performance</strong>
+                      <span class="dropdown-link-desc">Enthusiast rigs &amp; workload storytelling</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="products.html" class="nav-link active" data-dropdown-toggle aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-panel dropdown-mega">
+              <div class="dropdown-grid-2">
+                <div>
+                  <div class="dropdown-col-title">PC Components</div>
+                  <ul class="dropdown-list">
+                    <li><a href="products.html?category=processors" class="dropdown-link">Processors (CPU)</a></li>
+                    <li><a href="products.html?category=graphics-cards" class="dropdown-link">Graphics Cards (GPU)</a></li>
+                    <li><a href="products.html?category=motherboards" class="dropdown-link">Motherboards</a></li>
+                    <li><a href="products.html?category=memory" class="dropdown-link">RAM / Memory</a></li>
+                    <li><a href="products.html?category=storage" class="dropdown-link">SSD &amp; Storage</a></li>
+                    <li><a href="products.html?category=power-supplies" class="dropdown-link">Power Supplies</a></li>
+                    <li><a href="products.html?category=pc-cabinets" class="dropdown-link">PC Cabinets</a></li>
+                    <li><a href="products.html?category=cpu-coolers" class="dropdown-link">CPU Coolers</a></li>
+                    <li><a href="products.html?category=case-fans" class="dropdown-link">Case Fans</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="dropdown-col-title">Peripherals</div>
+                  <ul class="dropdown-list">
+                    <li><a href="products.html?category=monitors" class="dropdown-link">Monitors</a></li>
+                    <li><a href="products.html?category=keyboards" class="dropdown-link">Keyboards</a></li>
+                    <li><a href="products.html?category=gaming-mice" class="dropdown-link">Gaming Mice</a></li>
+                    <li><a href="products.html?category=headsets-speakers" class="dropdown-link">Headsets &amp; Speakers</a></li>
+                    <li><a href="products.html?category=mousepads" class="dropdown-link">Mousepads</a></li>
+                    <li><a href="products.html?category=webcams" class="dropdown-link">Webcams</a></li>
+                    <li><a href="products.html?category=controllers" class="dropdown-link">Controllers</a></li>
+                    <li><a href="products.html?category=networking" class="dropdown-link">Networking Accessories</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown-footer">
+                <span style="font-size:0.8rem;color:var(--text-muted);">Explore 38+ illustrative hardware components &amp; peripherals</span>
+                <a href="products.html" class="btn btn-primary btn-sm">All Products</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="build-your-pc.html" class="nav-link">Build Your PC</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="products.html#brands" class="nav-link" data-dropdown-toggle aria-expanded="false">
+              Brands
+            </a>
+            <div class="dropdown-panel dropdown-brands">
+              <div class="dropdown-col-title">Sample Hardware Brand Directory</div>
+              <div class="brands-dropdown-grid">
+                <a href="products.html?brand=ASUS" class="brand-pill-link"><span class="brand-pill-name">ASUS</span><span class="brand-pill-meta">Boards, GPUs &amp; OLED</span></a>
+                <a href="products.html?brand=MSI" class="brand-pill-link"><span class="brand-pill-name">MSI</span><span class="brand-pill-meta">GPUs, Boards &amp; PSUs</span></a>
+                <a href="products.html?brand=Gigabyte" class="brand-pill-link"><span class="brand-pill-name">Gigabyte</span><span class="brand-pill-meta">AORUS &amp; WindForce</span></a>
+                <a href="products.html?brand=Intel" class="brand-pill-link"><span class="brand-pill-name">Intel</span><span class="brand-pill-meta">LGA1700 Processors</span></a>
+                <a href="products.html?brand=AMD" class="brand-pill-link"><span class="brand-pill-name">AMD</span><span class="brand-pill-meta">Ryzen AM5 &amp; Radeon</span></a>
+                <a href="products.html?brand=NVIDIA" class="brand-pill-link"><span class="brand-pill-name">NVIDIA</span><span class="brand-pill-meta">RTX Graphics</span></a>
+                <a href="products.html?brand=Corsair" class="brand-pill-link"><span class="brand-pill-name">Corsair</span><span class="brand-pill-meta">Memory, PSU &amp; Cases</span></a>
+                <a href="products.html?brand=Kingston" class="brand-pill-link"><span class="brand-pill-name">Kingston</span><span class="brand-pill-meta">FURY DDR5 &amp; NVMe</span></a>
+                <a href="products.html?brand=Samsung" class="brand-pill-link"><span class="brand-pill-name">Samsung</span><span class="brand-pill-meta">990 PRO &amp; EVO SSDs</span></a>
+                <a href="products.html?brand=Logitech" class="brand-pill-link"><span class="brand-pill-name">Logitech</span><span class="brand-pill-meta">PRO Wireless Gear</span></a>
+                <a href="products.html?brand=Razer" class="brand-pill-link"><span class="brand-pill-name">Razer</span><span class="brand-pill-meta">Optical &amp; Esports</span></a>
+                <a href="products.html?brand=Cooler%20Master" class="brand-pill-link"><span class="brand-pill-name">Cooler Master</span><span class="brand-pill-meta">Cases &amp; Thermal</span></a>
+              </div>
+              <div class="dropdown-footer">
+                <span style="font-size:0.75rem;color:var(--text-dim);">Sample manufacturer directory - illustrative catalogue data</span>
+                <a href="products.html" style="font-size:0.8rem;font-weight:600;color:var(--accent-primary);">Filter Catalogue</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" data-action="open-search" aria-label="Search Products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <button type="button" class="icon-btn" data-action="open-wishlist" aria-label="Open Wishlist">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="badge-count" data-wishlist-count data-count="0">0</span>
+        </button>
+
+        <button type="button" class="icon-btn" data-action="open-cart" aria-label="Open Shopping Cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="badge-count" data-cart-count data-count="0">0</span>
+        </button>
+
+        <button type="button" class="icon-btn rtl-toggle-btn" data-action="toggle-rtl" aria-label="Toggle RTL Direction" title="Toggle RTL">RTL</button>
+
+        <button type="button" class="icon-btn" data-action="toggle-theme" aria-label="Toggle Light/Dark Theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle></svg>
+        </button>
+
+        <a href="products.html" class="btn btn-primary btn-sm nav-cta-btn">Shop Components</a>
+
+        <button type="button" class="icon-btn mobile-menu-toggle" data-action="open-mobile-menu" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE NAVIGATION DRAWER ==================== -->
+  <div class="mobile-nav-backdrop" id="bf-mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="bf-mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/icons/favicon.svg" alt="" class="brand-logo-mark" width="32" height="32">
+        <span class="brand-name">BYTE<span>FORGE</span></span>
+      </a>
+      <button type="button" class="icon-btn" data-action="close-mobile-menu" aria-label="Close Navigation Menu">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Quick Action Buttons in Menu -->
+    <div class="mobile-nav-actions">
+      <button type="button" class="icon-btn" data-action="open-search" aria-label="Search Products" title="Search Hardware Catalogue">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+      <button type="button" class="icon-btn" data-action="open-wishlist" aria-label="Open Wishlist" title="Saved Wishlist">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <span class="badge-count" data-wishlist-count data-count="0">0</span>
+      </button>
+      <button type="button" class="icon-btn" data-action="open-cart" aria-label="Open Shopping Cart" title="Hardware Shopping Cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="badge-count" data-cart-count data-count="0">0</span>
+      </button>
+      <button type="button" class="icon-btn rtl-toggle-btn" data-action="toggle-rtl" aria-label="Toggle RTL Direction" title="Toggle RTL">RTL</button>
+      <button type="button" class="icon-btn" data-action="toggle-theme" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle></svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <button type="button" class="mobile-nav-row" data-mobile-accordion>
+            <span>Home</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="index.html" class="mobile-submenu-link">Home - Primary Retail Store</a>
+            <a href="home-2.html" class="mobile-submenu-link">Home-2 - Custom PC &amp; Enthusiast</a>
+          </div>
+        </li>
+        <li class="mobile-nav-item expanded">
+          <button type="button" class="mobile-nav-row" data-mobile-accordion>
+            <span>Products</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="products.html" class="mobile-submenu-link"><strong>All Products Catalogue</strong></a>
+            <div class="mobile-submenu-group-title">PC Components</div>
+            <a href="products.html?category=processors" class="mobile-submenu-link">Processors (CPU)</a>
+            <a href="products.html?category=graphics-cards" class="mobile-submenu-link">Graphics Cards (GPU)</a>
+            <a href="products.html?category=motherboards" class="mobile-submenu-link">Motherboards</a>
+            <a href="products.html?category=memory" class="mobile-submenu-link">RAM / Memory</a>
+            <a href="products.html?category=storage" class="mobile-submenu-link">SSD &amp; Storage</a>
+            <a href="products.html?category=power-supplies" class="mobile-submenu-link">Power Supplies</a>
+            <a href="products.html?category=pc-cabinets" class="mobile-submenu-link">PC Cabinets</a>
+            <a href="products.html?category=cpu-coolers" class="mobile-submenu-link">CPU Coolers</a>
+            <a href="products.html?category=case-fans" class="mobile-submenu-link">Case Fans</a>
+            <div class="mobile-submenu-group-title">Peripherals</div>
+            <a href="products.html?category=monitors" class="mobile-submenu-link">Monitors</a>
+            <a href="products.html?category=keyboards" class="mobile-submenu-link">Keyboards</a>
+            <a href="products.html?category=gaming-mice" class="mobile-submenu-link">Gaming Mice</a>
+            <a href="products.html?category=headsets-speakers" class="mobile-submenu-link">Headsets &amp; Speakers</a>
+            <a href="products.html?category=mousepads" class="mobile-submenu-link">Mousepads</a>
+            <a href="products.html?category=webcams" class="mobile-submenu-link">Webcams</a>
+            <a href="products.html?category=controllers" class="mobile-submenu-link">Controllers</a>
+            <a href="products.html?category=networking" class="mobile-submenu-link">Networking Accessories</a>
+          </div>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="build-your-pc.html" class="mobile-nav-row">Build Your PC</a>
+        </li>
+        <li class="mobile-nav-item">
+          <button type="button" class="mobile-nav-row" data-mobile-accordion>
+            <span>Brands</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="products.html?brand=ASUS" class="mobile-submenu-link">ASUS</a>
+            <a href="products.html?brand=MSI" class="mobile-submenu-link">MSI</a>
+            <a href="products.html?brand=Gigabyte" class="mobile-submenu-link">Gigabyte</a>
+            <a href="products.html?brand=Intel" class="mobile-submenu-link">Intel</a>
+            <a href="products.html?brand=AMD" class="mobile-submenu-link">AMD</a>
+            <a href="products.html?brand=NVIDIA" class="mobile-submenu-link">NVIDIA</a>
+            <a href="products.html?brand=Corsair" class="mobile-submenu-link">Corsair</a>
+            <a href="products.html?brand=Kingston" class="mobile-submenu-link">Kingston</a>
+            <a href="products.html?brand=Samsung" class="mobile-submenu-link">Samsung</a>
+            <a href="products.html?brand=Logitech" class="mobile-submenu-link">Logitech</a>
+            <a href="products.html?brand=Razer" class="mobile-submenu-link">Razer</a>
+            <a href="products.html?brand=Cooler%20Master" class="mobile-submenu-link">Cooler Master</a>
+          </div>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="about.html" class="mobile-nav-row">About Us</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-nav-row">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="products.html" class="btn btn-primary btn-block">Shop Components</a>
+      <a href="build-your-pc.html" class="btn btn-secondary btn-block">Configure Custom PC</a>
+    </div>
+  </aside>
+
+  <!-- ==================== MAIN CATALOGUE CONTENT ==================== -->
+  <main>
+
+    <!-- Compact Page Header -->
+    <section class="page-hero-compact">
+      <div class="container">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;">
+          <div>
+            <span class="eyebrow">BYTEFORGE Hardware Catalogue</span>
+            <h1 class="section-title" id="bf-catalogue-heading" style="margin-bottom:6px;">All Hardware &amp; Peripherals</h1>
+            <p class="section-subtitle" id="bf-catalogue-desc">Browse our complete illustrative hardware catalogue with technical specifications and compatibility filters.</p>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <a href="build-your-pc.html" class="btn btn-secondary btn-sm">Configure in PC Builder</a>
+            <a href="contact.html#enquiry-form" class="btn btn-outline btn-sm">Bulk / Custom Enquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalogue Filter & Grid Section -->
+    <section class="section" style="padding-top:var(--space-10);">
+      <div class="container">
+        <div class="catalogue-layout">
+
+          <!-- LEFT: FILTER SIDEBAR -->
+          <aside class="filter-sidebar" id="bf-filter-sidebar" aria-label="Product Filters">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(--border-subtle);">
+              <h2 style="font-size:1rem;">Filter Catalogue</h2>
+              <div style="display:flex;gap:8px;align-items:center;">
+                <button type="button" id="bf-reset-filters-btn" style="font-size:0.78rem;color:var(--accent-primary);font-weight:600;">Reset All</button>
+                <button type="button" class="icon-btn mobile-filter-btn" id="bf-close-filter-drawer" aria-label="Close Filters" style="width:32px;height:32px;">
+                  <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Category Tree -->
+            <div class="filter-group">
+              <div class="filter-group-title">Hardware Categories</div>
+              <div class="filter-list" id="bf-filter-categories" style="max-height:340px;"></div>
+            </div>
+
+            <!-- Brand Checkboxes -->
+            <div class="filter-group" id="brands">
+              <div class="filter-group-title">Brands</div>
+              <div class="filter-list" id="bf-filter-brands"></div>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">
+                <span>Max Sample Price</span>
+                <span id="bf-filter-price-val" style="color:var(--accent-primary);">$2,000</span>
+              </div>
+              <input type="range" id="bf-filter-price" class="price-range-slider" min="50" max="2000" step="25" value="2000" aria-label="Maximum Price Filter">
+              <div style="display:flex;justify-content:space-between;font-size:0.72rem;color:var(--text-dim);margin-top:4px;">
+                <span>$50</span>
+                <span>$1,000</span>
+                <span>$2,000</span>
+              </div>
+            </div>
+
+            <!-- Specification Filter: CPU / Motherboard Socket -->
+            <div class="filter-group">
+              <div class="filter-group-title">Socket Platform</div>
+              <div class="filter-list">
+                <label class="filter-option"><span class="filter-option-label"><input type="radio" name="bf-spec-socket" value="all" checked><span>All Platforms</span></span></label>
+                <label class="filter-option"><span class="filter-option-label"><input type="radio" name="bf-spec-socket" value="AM5"><span>AMD Socket AM5</span></span></label>
+                <label class="filter-option"><span class="filter-option-label"><input type="radio" name="bf-spec-socket" value="LGA1700"><span>Intel Socket LGA1700</span></span></label>
+              </div>
+            </div>
+
+            <!-- Specification Filter: Memory Standard -->
+            <div class="filter-group">
+              <div class="filter-group-title">Memory Standard</div>
+              <div class="filter-list">
+                <label class="filter-option"><span class="filter-option-label"><input type="radio" name="bf-spec-ram" value="all" checked><span>All Memory Types</span></span></label>
+                <label class="filter-option"><span class="filter-option-label"><input type="radio" name="bf-spec-ram" value="DDR5"><span>DDR5 Platform</span></span></label>
+                <label class="filter-option"><span class="filter-option-label"><input type="radio" name="bf-spec-ram" value="DDR4"><span>DDR4 Platform</span></span></label>
+              </div>
+            </div>
+          </aside>
+
+          <!-- RIGHT: TOOLBAR & PRODUCT GRID -->
+          <div>
+            <div class="catalogue-toolbar">
+              <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:220px;">
+                <button type="button" class="btn btn-secondary btn-sm mobile-filter-btn" id="bf-open-filter-drawer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                  Filters
+                </button>
+                <div class="toolbar-search-wrap">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <input type="search" id="bf-catalogue-search" class="toolbar-search-input" placeholder="Search by model, socket, VRAM, switch..." aria-label="Search Catalogue">
+                </div>
+              </div>
+
+              <div class="toolbar-controls">
+                <span id="bf-results-count" style="font-size:0.85rem;color:var(--text-muted);font-weight:500;">Showing products</span>
+                <label for="bf-catalogue-sort" style="font-size:0.8rem;color:var(--text-dim);">Sort:</label>
+                <select id="bf-catalogue-sort" class="sort-select" aria-label="Sort Products">
+                  <option value="popular">Popularity</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="newest">Newest Arrivals</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Active Filter Chips -->
+            <div class="active-filters-bar" id="bf-active-filters"></div>
+
+            <!-- Product Grid -->
+            <div class="catalogue-products-grid" id="bf-catalogue-grid">
+      <article class="product-card" data-product-id="cpu-ryzen9-9950x">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="cpu-ryzen9-9950x" aria-label="Save AMD Ryzen 9 9950X Class 16-Core Unlocked Desktop Processor to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=cpu-ryzen9-9950x" aria-label="View details for AMD Ryzen 9 9950X Class 16-Core Unlocked Desktop Processor">
+            <img src="assets/images/products/cpu-ryzen9-9950x.svg" alt="AMD Ryzen 9 9950X Class 16-Core Unlocked Desktop Processor" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>AMD</span>
+            <span class="product-card-category">Processors</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=cpu-ryzen9-9950x">AMD Ryzen 9 9950X Class 16-Core Unlocked Desktop Processor</a>
+          </h3>
+          <span class="product-spec-pill">16 Cores / 32 Threads | Socket AM5 | Up to 5.7 GHz</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$649</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=cpu-ryzen9-9950x" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="cpu-ryzen9-9950x">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="cpu-ryzen7-9800x3d">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="cpu-ryzen7-9800x3d" aria-label="Save AMD Ryzen 7 9800X3D Class 8-Core 3D V-Cache Gaming Processor to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=cpu-ryzen7-9800x3d" aria-label="View details for AMD Ryzen 7 9800X3D Class 8-Core 3D V-Cache Gaming Processor">
+            <img src="assets/images/products/cpu-ryzen7-9800x3d.svg" alt="AMD Ryzen 7 9800X3D Class 8-Core 3D V-Cache Gaming Processor" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>AMD</span>
+            <span class="product-card-category">Processors</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=cpu-ryzen7-9800x3d">AMD Ryzen 7 9800X3D Class 8-Core 3D V-Cache Gaming Processor</a>
+          </h3>
+          <span class="product-spec-pill">8 Cores / 16 Threads | 96MB L3 3D V-Cache | AM5</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$479</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=cpu-ryzen7-9800x3d" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="cpu-ryzen7-9800x3d">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="gpu-asus-4090">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-low-stock">Low Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="gpu-asus-4090" aria-label="Save ASUS ROG Strix GeForce RTX 4090 OC Class 24GB Graphics Card to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=gpu-asus-4090" aria-label="View details for ASUS ROG Strix GeForce RTX 4090 OC Class 24GB Graphics Card">
+            <img src="assets/images/products/gpu-asus-4090.svg" alt="ASUS ROG Strix GeForce RTX 4090 OC Class 24GB Graphics Card" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>ASUS</span>
+            <span class="product-card-category">Graphics Cards</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=gpu-asus-4090">ASUS ROG Strix GeForce RTX 4090 OC Class 24GB Graphics Card</a>
+          </h3>
+          <span class="product-spec-pill">24GB GDDR6X | 358mm Length | 450W TDP | 3.5-Slot</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$1,899</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=gpu-asus-4090" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="gpu-asus-4090">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="gpu-nvidia-4080s">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="gpu-nvidia-4080s" aria-label="Save NVIDIA GeForce RTX 4080 SUPER Studio / Founders Class 16GB GPU to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=gpu-nvidia-4080s" aria-label="View details for NVIDIA GeForce RTX 4080 SUPER Studio / Founders Class 16GB GPU">
+            <img src="assets/images/products/gpu-msi-4080s.svg" alt="NVIDIA GeForce RTX 4080 SUPER Studio / Founders Class 16GB GPU" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>NVIDIA</span>
+            <span class="product-card-category">Graphics Cards</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=gpu-nvidia-4080s">NVIDIA GeForce RTX 4080 SUPER Studio / Founders Class 16GB GPU</a>
+          </h3>
+          <span class="product-spec-pill">16GB GDDR6X | 310mm Length | 320W TDP | Dual-Flow</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$1,049</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=gpu-nvidia-4080s" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="gpu-nvidia-4080s">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="mobo-asus-x870e">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="mobo-asus-x870e" aria-label="Save ASUS ROG Crosshair X870E Hero Class Socket AM5 ATX Motherboard to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=mobo-asus-x870e" aria-label="View details for ASUS ROG Crosshair X870E Hero Class Socket AM5 ATX Motherboard">
+            <img src="assets/images/products/mobo-asus-x870e.svg" alt="ASUS ROG Crosshair X870E Hero Class Socket AM5 ATX Motherboard" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>ASUS</span>
+            <span class="product-card-category">Motherboards</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=mobo-asus-x870e">ASUS ROG Crosshair X870E Hero Class Socket AM5 ATX Motherboard</a>
+          </h3>
+          <span class="product-spec-pill">Socket AM5 | DDR5 | ATX | 18+2+2 Power Stages</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$599</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=mobo-asus-x870e" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="mobo-asus-x870e">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="ram-corsair-64gb-ddr5">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="ram-corsair-64gb-ddr5" aria-label="Save Corsair Dominator Titanium 64GB (2x32GB) DDR5-6400 CL32 Memory Kit to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=ram-corsair-64gb-ddr5" aria-label="View details for Corsair Dominator Titanium 64GB (2x32GB) DDR5-6400 CL32 Memory Kit">
+            <img src="assets/images/products/ram-corsair-64gb-ddr5.svg" alt="Corsair Dominator Titanium 64GB (2x32GB) DDR5-6400 CL32 Memory Kit" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>Corsair</span>
+            <span class="product-card-category">RAM / Memory</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=ram-corsair-64gb-ddr5">Corsair Dominator Titanium 64GB (2x32GB) DDR5-6400 CL32 Memory Kit</a>
+          </h3>
+          <span class="product-spec-pill">64GB (2x32GB) | DDR5-6400 | CL32 | Forged Aluminum</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$279</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=ram-corsair-64gb-ddr5" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="ram-corsair-64gb-ddr5">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="ssd-samsung-990pro-2tb">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="ssd-samsung-990pro-2tb" aria-label="Save Samsung 990 PRO 2TB PCIe 4.0 x4 NVMe M.2 Internal SSD to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=ssd-samsung-990pro-2tb" aria-label="View details for Samsung 990 PRO 2TB PCIe 4.0 x4 NVMe M.2 Internal SSD">
+            <img src="assets/images/products/ssd-samsung-990pro-2tb.svg" alt="Samsung 990 PRO 2TB PCIe 4.0 x4 NVMe M.2 Internal SSD" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>Samsung</span>
+            <span class="product-card-category">SSD & Storage</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=ssd-samsung-990pro-2tb">Samsung 990 PRO 2TB PCIe 4.0 x4 NVMe M.2 Internal SSD</a>
+          </h3>
+          <span class="product-spec-pill">2TB M.2 2280 | PCIe 4.0 NVMe | Up to 7,450 MB/s</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$169</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=ssd-samsung-990pro-2tb" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="ssd-samsung-990pro-2tb">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="monitor-asus-pg32ucdm">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="monitor-asus-pg32ucdm" aria-label="Save ASUS ROG Swift PG32UCDM 32-Inch 4K UHD 240Hz QD-OLED Monitor to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=monitor-asus-pg32ucdm" aria-label="View details for ASUS ROG Swift PG32UCDM 32-Inch 4K UHD 240Hz QD-OLED Monitor">
+            <img src="assets/images/products/monitor-asus-pg32ucdm.svg" alt="ASUS ROG Swift PG32UCDM 32-Inch 4K UHD 240Hz QD-OLED Monitor" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>ASUS</span>
+            <span class="product-card-category">Monitors</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=monitor-asus-pg32ucdm">ASUS ROG Swift PG32UCDM 32-Inch 4K UHD 240Hz QD-OLED Monitor</a>
+          </h3>
+          <span class="product-spec-pill">32-Inch 4K UHD | 240Hz QD-OLED | 0.03ms | USB-C 90W</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$1,299</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=monitor-asus-pg32ucdm" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="monitor-asus-pg32ucdm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="monitor-asus-pg32ucdm">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="monitor-asus-pg32ucdm" aria-label="Save ASUS ROG Swift PG32UCDM 32-Inch 4K UHD 240Hz QD-OLED Monitor to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=monitor-asus-pg32ucdm" aria-label="View details for ASUS ROG Swift PG32UCDM 32-Inch 4K UHD 240Hz QD-OLED Monitor">
+            <img src="assets/images/products/monitor-asus-pg32ucdm.svg" alt="ASUS ROG Swift PG32UCDM 32-Inch 4K UHD 240Hz QD-OLED Monitor" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>ASUS</span>
+            <span class="product-card-category">Monitors</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=monitor-asus-pg32ucdm">ASUS ROG Swift PG32UCDM 32-Inch 4K UHD 240Hz QD-OLED Monitor</a>
+          </h3>
+          <span class="product-spec-pill">32-Inch 4K UHD | 240Hz QD-OLED | 0.03ms | USB-C 90W</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$1,299</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=monitor-asus-pg32ucdm" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="monitor-asus-pg32ucdm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="kb-asus-azoth">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="kb-asus-azoth" aria-label="Save ASUS ROG Azoth 75% Wireless Custom Mechanical Keyboard with OLED to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=kb-asus-azoth" aria-label="View details for ASUS ROG Azoth 75% Wireless Custom Mechanical Keyboard with OLED">
+            <img src="assets/images/products/kb-asus-azoth.svg" alt="ASUS ROG Azoth 75% Wireless Custom Mechanical Keyboard with OLED" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>ASUS</span>
+            <span class="product-card-category">Keyboards</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=kb-asus-azoth">ASUS ROG Azoth 75% Wireless Custom Mechanical Keyboard with OLED</a>
+          </h3>
+          <span class="product-spec-pill">75% Layout | Silicone Gasket Mount | Tri-Mode Wireless</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$249</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=kb-asus-azoth" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="kb-asus-azoth">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="mouse-logitech-superlight2">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="mouse-logitech-superlight2" aria-label="Save Logitech G PRO X SUPERLIGHT 2 Wireless Esports Mouse to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=mouse-logitech-superlight2" aria-label="View details for Logitech G PRO X SUPERLIGHT 2 Wireless Esports Mouse">
+            <img src="assets/images/products/mouse-logitech-superlight2.svg" alt="Logitech G PRO X SUPERLIGHT 2 Wireless Esports Mouse" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>Logitech</span>
+            <span class="product-card-category">Gaming Mice</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=mouse-logitech-superlight2">Logitech G PRO X SUPERLIGHT 2 Wireless Esports Mouse</a>
+          </h3>
+          <span class="product-spec-pill">60g Ultralight | HERO 2 32K Sensor | Optical-Mech</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$159</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=mouse-logitech-superlight2" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="mouse-logitech-superlight2">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="headset-logitech-pro-x2">
+        <div class="product-card-media">
+          <div class="product-card-badges">
+            <span class="status-badge status-in-stock">In Stock</span>
+          </div>
+          <button type="button" class="wishlist-btn" data-wishlist-btn="headset-logitech-pro-x2" aria-label="Save Logitech G PRO X 2 LIGHTSPEED Wireless Graphene Gaming Headset to Wishlist" aria-pressed="false">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <a href="product-details.html?id=headset-logitech-pro-x2" aria-label="View details for Logitech G PRO X 2 LIGHTSPEED Wireless Graphene Gaming Headset">
+            <img src="assets/images/products/headset-logitech-pro-x2.svg" alt="Logitech G PRO X 2 LIGHTSPEED Wireless Graphene Gaming Headset" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-meta">
+            <span>Logitech</span>
+            <span class="product-card-category">Headsets</span>
+          </div>
+          <h3 class="product-card-title">
+            <a href="product-details.html?id=headset-logitech-pro-x2">Logitech G PRO X 2 LIGHTSPEED Wireless Graphene Gaming Headset</a>
+          </h3>
+          <span class="product-spec-pill">50mm Graphene Drivers | Wireless + Bluetooth | 50h</span>
+          <div class="product-card-footer">
+            <div class="product-price-wrap">
+              <span class="product-price-label">Sample Price</span>
+              <span class="product-price">$239</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product-details.html?id=headset-logitech-pro-x2" class="btn btn-secondary btn-sm">Details</a>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="headset-logitech-pro-x2">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </article>
+</div>
+
+            <!-- Illustrative Data Notice -->
+            <div class="disclaimer-note" style="margin-top:var(--space-8);">
+              <strong>Sample Catalogue Disclaimer:</strong> Product names, technical specifications, compatibility metrics, availability labels, and prices are illustrative sample data created for template demonstration.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom:14px;">
+            <img src="assets/icons/favicon.svg" alt="" class="brand-logo-mark" width="36" height="36">
+            <div class="brand-logo-text">
+              <span class="brand-name">BYTE<span>FORGE</span></span>
+              <span class="brand-tagline-mini">Build Better. Perform Beyond.</span>
+            </div>
+          </a>
+          <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:16px;max-width:340px;">
+            Modern computer hardware and peripherals store specialising in custom PC components, gaming hardware, workstation components, and desktop accessories.
+          </p>
+          <div style="font-size:0.8125rem;color:var(--text-dim);">
+            <div><strong>Storefront:</strong> 742 Silicon Avenue, Suite 200, Austin, TX</div>
+            <div><strong>Enquiries:</strong> hardware@byteforge.example - +1 (512) 555-0194</div>
+          </div>
+          <div class="footer-socials" aria-label="Social Media Channels">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="X (Twitter)" title="X (Twitter)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Discord" title="Discord Community">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram" title="Instagram Gallery">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="GitHub" title="GitHub Repository">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">PC Components</h3>
+          <ul class="footer-links">
+            <li><a href="products.html?category=processors">Processors (CPU)</a></li>
+            <li><a href="products.html?category=graphics-cards">Graphics Cards (GPU)</a></li>
+            <li><a href="products.html?category=motherboards">Motherboards</a></li>
+            <li><a href="products.html?category=memory">RAM / Memory</a></li>
+            <li><a href="products.html?category=storage">SSD &amp; Storage</a></li>
+            <li><a href="products.html?category=power-supplies">Power Supplies</a></li>
+            <li><a href="products.html?category=pc-cabinets">PC Cabinets &amp; Coolers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Peripherals</h3>
+          <ul class="footer-links">
+            <li><a href="products.html?category=monitors">Gaming &amp; Pro Monitors</a></li>
+            <li><a href="products.html?category=keyboards">Mechanical Keyboards</a></li>
+            <li><a href="products.html?category=gaming-mice">Ultralight Gaming Mice</a></li>
+            <li><a href="products.html?category=headsets-speakers">Headsets &amp; Speakers</a></li>
+            <li><a href="products.html?category=mousepads">Extended Mousepads</a></li>
+            <li><a href="products.html?category=webcams">4K Webcams &amp; Controllers</a></li>
+            <li><a href="products.html?category=networking">Wi-Fi 7 Networking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Store &amp; Tools</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home - Retail Storefront</a></li>
+            <li><a href="home-2.html">Home-2 - Enthusiast &amp; Builds</a></li>
+            <li><a href="products.html">Full Hardware Catalogue</a></li>
+            <li><a href="build-your-pc.html">Interactive 9-Step PC Builder</a></li>
+            <li><a href="about.html">About BYTEFORGE</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 BYTEFORGE Hardware &amp; Peripherals Template. All rights reserved.</span>
+        <span>Sample catalogue data, brand references, and prices are illustrative for template demonstration.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
+

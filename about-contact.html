@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYTEFORGE — About &amp; Contact</title>
+  <script>
+    // Redirect hash/query appropriately to separate pages
+    const hash = window.location.hash;
+    const search = window.location.search;
+    if (hash === '#contact' || hash === '#enquiry-form' || search.includes('enquiry') || search.includes('product') || search.includes('preset') || search.includes('from=cart')) {
+      window.location.replace('contact.html' + search + hash);
+    } else {
+      window.location.replace('about.html' + search + hash);
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a href="about.html">About BYTEFORGE</a> or <a href="contact.html">Contact Us</a>...</p>
+</body>
+</html>

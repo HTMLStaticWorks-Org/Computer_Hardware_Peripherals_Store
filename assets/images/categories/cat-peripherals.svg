@@ -1,0 +1,106 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="46%" r="55%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.18"/>
+      <stop offset="55%" stop-color="#151C28" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0B0D10" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="metalBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3646"/>
+      <stop offset="45%" stop-color="#1B212C"/>
+      <stop offset="100%" stop-color="#10141B"/>
+    </linearGradient>
+    <linearGradient id="silverTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="darkAnodized" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242C3A"/>
+      <stop offset="100%" stop-color="#0E1218"/>
+    </linearGradient>
+    <linearGradient id="copperPipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <linearGradient id="goldPins" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Backdrop -->
+  <rect width="800" height="600" fill="#0B0D10"/>
+  <rect width="800" height="600" fill="url(#studioGlow)"/>
+  <rect width="800" height="600" fill="url(#techGrid)"/>
+
+  <!-- Studio Floor Pedestal Reflection Line -->
+  <ellipse cx="400" cy="525" rx="270" ry="22" fill="#050709" opacity="0.8"/>
+  <line x1="80" y1="525" x2="720" y2="525" stroke="#1E293B" stroke-width="1"/>
+  <line x1="250" y1="525" x2="550" y2="525" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Top Technical Telemetry Bar -->
+  <g opacity="0.85">
+    <rect x="28" y="24" width="140" height="24" rx="4" fill="#131822" stroke="#263042" stroke-width="1"/>
+    <circle cx="42" cy="36" r="3.5" fill="#3B82F6"/>
+    <text x="53" y="40" fill="#CBD5E1" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2">PERIPHERALS</text>
+    <text x="772" y="40" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1.5">BYTEFORGE // STUDIO SPEC</text>
+  </g>
+
+  <!-- Main Hardware Render -->
+  <g filter="url(#dropShadow)">
+                <!-- Coiled Aviator USB-C Cable -->
+            <path d="M 400 185 V 145 H 520" fill="none" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+            <rect x="445" y="139" width="36" height="12" rx="4" fill="url(#silverTrim)"/>
+            <!-- CNC Aluminum 75%/TKL Keyboard Frame -->
+            <rect x="140" y="185" width="520" height="215" rx="14" fill="url(#metalBody)" stroke="url(#silverTrim)" stroke-width="2.5"/>
+            <rect x="156" y="201" width="488" height="183" rx="8" fill="#0D1117" stroke="#263042" stroke-width="1.5"/>
+            <!-- ESC Accent Key &amp; Rotary Knob -->
+            <rect x="168" y="212" width="32" height="26" rx="4" fill="#3B82F6"/>
+            <circle cx="618" cy="225" r="13" fill="url(#silverTrim)" stroke="#0F172A" stroke-width="2"/>
+            <!-- Keycap Matrix Rows -->
+            <g fill="#1E293B" stroke="#334155" stroke-width="1">
+              <!-- Row 1 -->
+              <rect x="210" y="212" width="28" height="26" rx="4"/><rect x="242" y="212" width="28" height="26" rx="4"/><rect x="274" y="212" width="28" height="26" rx="4"/><rect x="306" y="212" width="28" height="26" rx="4"/>
+              <rect x="348" y="212" width="28" height="26" rx="4"/><rect x="380" y="212" width="28" height="26" rx="4"/><rect x="412" y="212" width="28" height="26" rx="4"/><rect x="444" y="212" width="28" height="26" rx="4"/>
+              <rect x="486" y="212" width="28" height="26" rx="4"/><rect x="518" y="212" width="28" height="26" rx="4"/><rect x="550" y="212" width="28" height="26" rx="4"/>
+              <!-- Row 2 -->
+              <rect x="168" y="246" width="420" height="28" rx="4" stroke-dasharray="28,4"/>
+              <!-- Row 3 -->
+              <rect x="168" y="280" width="45" height="28" rx="4" fill="#334155"/>
+              <rect x="218" y="280" width="340" height="28" rx="4" stroke-dasharray="28,4"/>
+              <rect x="564" y="280" width="66" height="28" rx="4" fill="#3B82F6"/>
+              <!-- Row 4 -->
+              <rect x="168" y="314" width="60" height="28" rx="4" fill="#334155"/>
+              <rect x="234" y="314" width="320" height="28" rx="4" stroke-dasharray="28,4"/>
+              <rect x="560" y="314" width="70" height="28" rx="4" fill="#334155"/>
+              <!-- Row 5 + Spacebar -->
+              <rect x="168" y="348" width="36" height="26" rx="4" fill="#334155"/>
+              <rect x="208" y="348" width="36" height="26" rx="4" fill="#334155"/>
+              <rect x="248" y="348" width="36" height="26" rx="4" fill="#334155"/>
+              <rect x="290" y="348" width="190" height="26" rx="4" fill="#283548" stroke="#3B82F6" stroke-width="1.2"/>
+              <rect x="486" y="348" width="36" height="26" rx="4" fill="#334155"/>
+              <rect x="526" y="348" width="36" height="26" rx="4" fill="#334155"/>
+              <rect x="568" y="348" width="62" height="26" rx="4" fill="#334155"/>
+            </g>
+  </g>
+
+  <!-- Bottom Caption Overlay -->
+  <g>
+    <text x="32" y="564" fill="#F8FAFC" font-family="Space Grotesk, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">GAMING &amp; PRO PERIPHERALS</text>
+    <text x="32" y="583" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">QD-OLED Monitors, CNC Mechanical Keyboards, Ultralight Mice &amp; Audio</text>
+    <text x="768" y="576" text-anchor="end" fill="#64748B" font-family="Space Grotesk, monospace" font-size="11" letter-spacing="1">ILLUSTRATIVE HARDWARE RENDER</text>
+  </g>
+</svg>
