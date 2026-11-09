@@ -101,7 +101,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="products.html#brands" class="nav-link" data-dropdown-toggle aria-expanded="false">
+            <a href="brands.html" class="nav-link" data-dropdown-toggle aria-expanded="false">
               Brands
             </a>
             <div class="dropdown-panel dropdown-brands">
@@ -122,7 +122,7 @@
               </div>
               <div class="dropdown-footer">
                 <span style="font-size:0.75rem;color:var(--text-dim);">Sample manufacturer directory - illustrative catalogue data</span>
-                <a href="products.html" style="font-size:0.8rem;font-weight:600;color:var(--accent-primary);">Filter Catalogue</a>
+                <a href="brands.html" style="font-size:0.8rem;font-weight:600;color:var(--accent-primary);">View All Brands</a>
               </div>
             </div>
           </li>
@@ -248,6 +248,7 @@
             <span>Brands</span>
           </button>
           <div class="mobile-submenu">
+            <a href="brands.html" class="mobile-submenu-link"><strong>All Brands Directory</strong></a>
             <a href="products.html?brand=ASUS" class="mobile-submenu-link">ASUS</a>
             <a href="products.html?brand=MSI" class="mobile-submenu-link">MSI</a>
             <a href="products.html?brand=Gigabyte" class="mobile-submenu-link">Gigabyte</a>
@@ -340,10 +341,10 @@
         </div>
 
         <!-- Split Form & Location Section -->
-        <div class="contact-split-section" id="enquiry-form">
+        <div class="contact-split-section" id="enquiry-form" style="width:100%;max-width:100%;">
 
           <!-- Left: Validated Hardware & Custom Build Enquiry Form -->
-          <div class="enquiry-form-card">
+          <div class="enquiry-form-card" style="min-width:0;max-width:100%;box-sizing:border-box;">
             <span class="eyebrow">Hardware &amp; Custom Build Consultation</span>
             <h2 style="font-size:1.6rem;margin-bottom:6px;">Submit an Enquiry</h2>
             <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:var(--space-5);">
@@ -353,7 +354,7 @@
             <!-- Dynamic Pre-Fill Banner -->
             <div id="bf-prefill-notice" style="display:none;margin-bottom:18px;padding:12px 16px;background:var(--accent-soft);border:1px solid var(--accent-border);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:600;color:var(--accent-primary);"></div>
 
-            <form id="bf-enquiry-form" novalidate>
+            <form id="bf-enquiry-form" novalidate style="width:100%;max-width:100%;">
               <div class="form-grid-2">
                 <div class="form-field">
                   <label for="bf-form-name" class="form-label">Full Name <span class="req">*</span></label>
@@ -438,15 +439,15 @@
           </div>
 
           <!-- Right: Interactive Map & Studio Location Details -->
-          <div style="display:flex;flex-direction:column;gap:var(--space-6);">
-            <div class="map-showcase-card">
+          <div class="contact-sidebar" style="display:flex;flex-direction:column;gap:var(--space-6);min-width:0;max-width:100%;width:100%;box-sizing:border-box;">
+            <div class="map-showcase-card" style="min-width:0;max-width:100%;width:100%;box-sizing:border-box;">
               <!-- Embedded Google Map -->
-              <div class="contact-map-frame" style="margin-top:0;">
+              <div class="contact-map-frame" style="margin-top:0;width:100%;max-width:100%;overflow:hidden;box-sizing:border-box;">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110204.59591465985!2d-97.7430608!3d30.267153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
                   width="100%" 
                   height="340" 
-                  style="border:0;display:block;" 
+                  style="border:0;display:block;width:100%;max-width:100%;" 
                   allowfullscreen="" 
                   loading="lazy" 
                   referrerpolicy="no-referrer-when-downgrade"
@@ -467,13 +468,13 @@
             </div>
 
             <!-- Social & Community Channels -->
-            <div class="contact-info-card">
+            <div class="contact-info-card" style="min-width:0;max-width:100%;width:100%;box-sizing:border-box;">
               <div style="font-family:var(--font-heading);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent-primary);">Social Media &amp; Build Showcases</div>
               <h3 style="font-size:1.1rem;">Follow BYTEFORGE Channels</h3>
               <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:12px;">
                 Connect with our enthusiast community for build logs, benchmark breakdowns, and new arrivals:
               </p>
-              <div class="footer-socials" style="margin-top:0;">
+              <div class="footer-socials" style="margin-top:0;display:flex;flex-wrap:wrap;gap:8px;">
                 <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="X (Twitter)" title="X (Twitter)">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
@@ -570,6 +571,7 @@
             <li><a href="home-2.html">Home-2 - Enthusiast &amp; Builds</a></li>
             <li><a href="products.html">Full Hardware Catalogue</a></li>
             <li><a href="build-your-pc.html">Interactive 9-Step PC Builder</a></li>
+            <li><a href="brands.html">Authorized Brand Directory</a></li>
             <li><a href="about.html">About BYTEFORGE</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
@@ -588,4 +590,7 @@
   <script src="js/contact.js"></script>
 </body>
 </html>
+
+
+
 

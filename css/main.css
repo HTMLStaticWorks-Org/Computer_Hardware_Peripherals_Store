@@ -767,6 +767,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--bg-hover);
 }
 
+.mobile-nav-row.active,
+.mobile-nav-item.active > .mobile-nav-row {
+  color: var(--accent-primary);
+  font-weight: 700;
+  background-color: var(--accent-soft);
+  border-radius: var(--radius-sm);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mobile-submenu-link.active {
+  color: var(--accent-primary);
+  font-weight: 700;
+  background-color: var(--accent-soft);
+  border-left: 3px solid var(--accent-primary);
+  padding-left: 12px;
+}
+
 .mobile-nav-footer {
   padding: var(--space-4) var(--space-5);
   border-top: 1px solid var(--border-subtle);
@@ -1513,6 +1531,87 @@ h1, h2, h3, h4, h5, h6 {
 [dir="rtl"] .contact-hero-section,
 [dir="rtl"] .contact-hero-section p {
   text-align: center !important;
+}
+
+/* ==========================================================================
+   BACK TO TOP FLOATING BUTTON
+   ========================================================================== */
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 0 16px rgba(59, 130, 246, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 995;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px) scale(0.92);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.back-to-top:hover {
+  background: var(--accent-hover);
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), 0 0 22px rgba(59, 130, 246, 0.55);
+}
+
+.back-to-top:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.back-to-top svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  transition: transform 0.2s ease;
+}
+
+.back-to-top:hover svg {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+  .back-to-top svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 28px;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .back-to-top {
+    left: 20px;
+    right: auto;
+  }
 }
 
 

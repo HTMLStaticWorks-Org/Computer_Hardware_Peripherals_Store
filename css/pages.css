@@ -1647,6 +1647,16 @@
 
 .page-hero-compact {
   text-align: center;
+  min-height: 250px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: var(--space-10) 0;
+  box-sizing: border-box;
+}
+
+.page-hero-compact .container {
+  width: 100%;
 }
 
 .page-hero-compact .container > div {
@@ -1654,6 +1664,7 @@
   align-items: center !important;
   justify-content: center !important;
   text-align: center !important;
+  width: 100%;
 }
 
 .page-hero-compact .section-subtitle {
@@ -1665,6 +1676,30 @@
 
 .page-hero-compact div[style*="display:flex"] {
   justify-content: center !important;
+}
+
+/* ==========================================================================
+   CENTERED EYEBROW HEADINGS (Pre-Assembly Guide & Lab Standards)
+   ========================================================================== */
+.section-header-center,
+.section-header.text-center,
+.section-header[style*="text-align:center"],
+.section-header[style*="text-align: center"] {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.section-header-center .eyebrow,
+.section-header.text-center .eyebrow,
+.section-header[style*="text-align:center"] .eyebrow,
+.section-header[style*="text-align: center"] .eyebrow {
+  display: inline-flex !important;
+  align-self: center !important;
+  margin: 0 auto var(--space-2) !important;
+  text-align: center !important;
 }
 
 .about-hero-section,
@@ -1794,6 +1829,82 @@
   height: 420px;
   border: 0;
   display: block;
+}
+
+/* ==========================================================================
+   CONTACT PAGE MOBILE RESPONSIVENESS FIXES (ZERO CROPPING)
+   ========================================================================== */
+@media (max-width: 960px) {
+  .contact-split-section {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-8) !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-split-section {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-6) !important;
+    width: 100% !important;
+  }
+
+  .contact-split-section > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .enquiry-form-card {
+    padding: var(--space-6) var(--space-5) !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-4) !important;
+  }
+
+  .map-showcase-card,
+  .contact-info-card {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+  .contact-map-frame {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .contact-map-frame iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 300px !important;
+  }
+
+  .contact-info-card .footer-socials {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .enquiry-form-card {
+    padding: 20px 14px !important;
+  }
+
+  .contact-info-card {
+    padding: 18px 14px !important;
+  }
+
+  .contact-map-frame iframe {
+    height: 240px !important;
+  }
 }
 
 

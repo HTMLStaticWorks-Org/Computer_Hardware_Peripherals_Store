@@ -1,5 +1,5 @@
-/* ==========================================================================
-   BYTEFORGE — ILLUSTRATIVE SAMPLE HARDWARE & PERIPHERALS CATALOGUE DATA
+﻿/* ==========================================================================
+   BYTEFORGE â€” ILLUSTRATIVE SAMPLE HARDWARE & PERIPHERALS CATALOGUE DATA
    Note: All product specifications, compatibility parameters, and prices are
    illustrative sample data for retail demonstration purposes.
    ========================================================================== */
@@ -62,7 +62,7 @@ window.BYTEFORGE_DATA = {
       name: "Entry-Level Gaming PC",
       codename: "FORGE CORE // 1080P-1440P",
       useCase: "Competitive eSports & High-FPS 1080p/1440p Gaming",
-      image: "assets/images/builds/build-entry.svg",
+      image: "assets/images/builds/build-entry.jpg",
       estimatedPrice: 1296,
       targetPerf: "144+ FPS @ 1080p Ultra / 100+ FPS @ 1440p High (Illustrative)",
       highlights: [
@@ -89,7 +89,7 @@ window.BYTEFORGE_DATA = {
       name: "Performance Gaming PC",
       codename: "FORGE VELOCITY // 1440P ULTRA",
       useCase: "High-Refresh 1440p Ultra Gaming & Single-PC Streaming",
-      image: "assets/images/builds/build-performance.svg",
+      image: "assets/images/builds/build-performance.jpg",
       estimatedPrice: 2152,
       targetPerf: "165+ FPS @ 1440p Ultra & Ray Tracing Ready (Illustrative)",
       highlights: [
@@ -116,7 +116,7 @@ window.BYTEFORGE_DATA = {
       name: "High-End Gaming PC",
       codename: "FORGE APEX // 4K FLAGSHIP",
       useCase: "Uncompromised 4K 240Hz Gaming, Path Tracing & VR",
-      image: "assets/images/builds/build-highend.svg",
+      image: "assets/images/builds/build-highend.jpg",
       estimatedPrice: 3821,
       targetPerf: "120+ FPS @ 4K UHD Max Settings + Full Ray Tracing (Illustrative)",
       highlights: [
@@ -143,7 +143,7 @@ window.BYTEFORGE_DATA = {
       name: "Professional Workstation",
       codename: "FORGE STUDIO // CREATOR & AI",
       useCase: "3D Rendering, CAD, Local LLM Compute & 8K Color Grading",
-      image: "assets/images/builds/build-workstation.svg",
+      image: "assets/images/builds/build-workstation.jpg",
       estimatedPrice: 3341,
       targetPerf: "Multi-Threaded Compute, 24-Core Rendering & CUDA Acceleration (Illustrative)",
       highlights: [
@@ -181,8 +181,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 98,
       releaseOrder: 1,
-      image: "assets/images/products/cpu-ryzen9-9950x.svg",
-      keySpec: "16 Cores / 32 Threads • Socket AM5 • Up to 5.7 GHz",
+      image: "assets/images/products/cpu-ryzen9-9950x.jpg",
+      keySpec: "16 Cores / 32 Threads â€¢ Socket AM5 â€¢ Up to 5.7 GHz",
       shortDesc: "Flagship 16-core, 32-thread desktop processor engineered on Zen 5 architecture for heavy multi-threaded workstation compilation, 3D rendering, and enthusiast gaming.",
       compat: {
         socket: "AM5",
@@ -221,8 +221,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 100,
       releaseOrder: 2,
-      image: "assets/images/products/cpu-ryzen7-9800x3d.svg",
-      keySpec: "8 Cores / 16 Threads • 96MB L3 3D V-Cache • AM5",
+      image: "assets/images/products/cpu-ryzen7-9800x3d.jpg",
+      keySpec: "8 Cores / 16 Threads â€¢ 96MB L3 3D V-Cache â€¢ AM5",
       shortDesc: "Second-generation 3D V-Cache gaming processor delivering class-leading 1% low frame pacing and ultra-low latency across simulation and eSports titles.",
       compat: {
         socket: "AM5",
@@ -241,7 +241,7 @@ window.BYTEFORGE_DATA = {
       features: [
         "Relocated 3D V-Cache stack beneath the compute die for superior thermal transfer",
         "Full overclocking and undervolting support on AM5 chipsets",
-        "High energy efficiency during gaming workloads (~65W–85W typical gaming draw)",
+        "High energy efficiency during gaming workloads (~65Wâ€“85W typical gaming draw)",
         "Ideal pairing for high-refresh 1440p and 4K graphics cards"
       ],
       variants: [
@@ -260,8 +260,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 91,
       releaseOrder: 3,
-      image: "assets/images/products/cpu-core-i9-14900k.svg",
-      keySpec: "24 Cores (8P+16E) • Socket LGA1700 • Up to 6.0 GHz",
+      image: "assets/images/products/cpu-core-i9-14900k.jpg",
+      keySpec: "24 Cores (8P+16E) â€¢ Socket LGA1700 â€¢ Up to 6.0 GHz",
       shortDesc: "Hybrid 24-core (8 Performance + 16 Efficient cores) desktop processor engineered for multi-tasking creators, CAD workflows, and high-clock gaming.",
       compat: {
         socket: "LGA1700",
@@ -299,8 +299,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 86,
       releaseOrder: 4,
-      image: "assets/images/products/cpu-core-i5-14600k.svg",
-      keySpec: "14 Cores (6P+8E) • Socket LGA1700 • 125W Base TDP",
+      image: "assets/images/products/cpu-core-i5-14600k.jpg",
+      keySpec: "14 Cores (6P+8E) â€¢ Socket LGA1700 â€¢ 125W Base TDP",
       shortDesc: "Balanced 14-core processor offering strong single-core gaming responsiveness and multi-core productivity at an accessible mid-range price point.",
       compat: {
         socket: "LGA1700",
@@ -338,8 +338,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 99,
       releaseOrder: 1,
-      image: "assets/images/products/gpu-asus-4090.svg",
-      keySpec: "24GB GDDR6X • 358mm Length • 450W TDP • 3.5-Slot",
+      image: "assets/images/products/gpu-asus-4090.jpg",
+      keySpec: "24GB GDDR6X â€¢ 358mm Length â€¢ 450W TDP â€¢ 3.5-Slot",
       shortDesc: "Flagship 24GB graphics accelerator featuring a milled vapor chamber, die-cast metal exoskeleton, and triple Axial-tech fans for sustained 4K gaming and AI workloads.",
       compat: {
         lengthMm: 358,
@@ -349,10 +349,10 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "VRAM Capacity & Type": "24 GB GDDR6X (384-bit Memory Interface)",
-        "Card Dimensions (Length)": "358 mm Length × 149 mm Width × 70 mm Height (3.5-Slot)",
+        "Card Dimensions (Length)": "358 mm Length Ã— 149 mm Width Ã— 70 mm Height (3.5-Slot)",
         "Thermal Design Power (TDP)": "450W (Requires 16-Pin 12V-2x6 / 3x 8-Pin Adapter)",
-        "Recommended PSU Capacity": "850W – 1000W ATX 3.0/3.1 Power Supply",
-        "Display Outputs": "2× HDMI 2.1a, 3× DisplayPort 1.4a",
+        "Recommended PSU Capacity": "850W â€“ 1000W ATX 3.0/3.1 Power Supply",
+        "Display Outputs": "2Ã— HDMI 2.1a, 3Ã— DisplayPort 1.4a",
         "Cabinet Clearance Note": "Requires PC Cabinet with >= 360mm GPU clearance"
       },
       features: [
@@ -378,8 +378,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 96,
       releaseOrder: 2,
-      image: "assets/images/products/gpu-msi-4080s.svg",
-      keySpec: "16GB GDDR6X • 310mm Length • 320W TDP • Dual-Flow",
+      image: "assets/images/products/gpu-msi-4080s.jpg",
+      keySpec: "16GB GDDR6X â€¢ 310mm Length â€¢ 320W TDP â€¢ Dual-Flow",
       shortDesc: "Precision-machined unibody 16GB graphics card built for high-frame-rate 4K gaming, DLSS 3 Frame Generation, and NVIDIA Studio creative acceleration.",
       compat: {
         lengthMm: 310,
@@ -389,10 +389,10 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "VRAM Capacity & Type": "16 GB GDDR6X (256-bit Bus)",
-        "Card Dimensions (Length)": "310 mm Length × 140 mm Width (3-Slot)",
+        "Card Dimensions (Length)": "310 mm Length Ã— 140 mm Width (3-Slot)",
         "Thermal Design Power (TDP)": "320W (Native 16-Pin 12V-2x6 Header)",
         "Recommended PSU Capacity": "750W+ Power Supply",
-        "Display Outputs": "1× HDMI 2.1a, 3× DisplayPort 1.4a"
+        "Display Outputs": "1Ã— HDMI 2.1a, 3Ã— DisplayPort 1.4a"
       },
       features: [
         "Compact 310mm footprint fits comfortably in most Micro-ATX and Mid-Tower cases",
@@ -415,8 +415,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 93,
       releaseOrder: 3,
-      image: "assets/images/products/gpu-gigabyte-4070tis.svg",
-      keySpec: "16GB GDDR6X • 300mm Length • 285W TDP • WindForce 3X",
+      image: "assets/images/products/gpu-gigabyte-4070tis.jpg",
+      keySpec: "16GB GDDR6X â€¢ 300mm Length â€¢ 285W TDP â€¢ WindForce 3X",
       shortDesc: "Creator-inspired metallic silver and charcoal triple-fan GPU with 16GB VRAM buffer, ideal for 1440p ultra-refresh gaming and compact mATX builds.",
       compat: {
         lengthMm: 300,
@@ -426,7 +426,7 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "VRAM Capacity & Type": "16 GB GDDR6X (256-bit Bus)",
-        "Card Dimensions (Length)": "300 mm Length × 130 mm Width × 57.6 mm Height",
+        "Card Dimensions (Length)": "300 mm Length Ã— 130 mm Width Ã— 57.6 mm Height",
         "Thermal Design Power (TDP)": "285W",
         "Recommended PSU Capacity": "700W+ Power Supply",
         "Cooling System": "WindForce 3X Alternate Spinning 90mm Fans + 8 Composite Heatpipes"
@@ -452,8 +452,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 90,
       releaseOrder: 4,
-      image: "assets/images/products/gpu-amd-7800xt.svg",
-      keySpec: "16GB GDDR6 • 267mm Length • 263W TDP • 2.5-Slot",
+      image: "assets/images/products/gpu-amd-7800xt.jpg",
+      keySpec: "16GB GDDR6 â€¢ 267mm Length â€¢ 263W TDP â€¢ 2.5-Slot",
       shortDesc: "High-value 1440p rasterization powerhouse with 16GB GDDR6 memory in a compact 267mm dual-axial chassis that fits virtually any PC cabinet.",
       compat: {
         lengthMm: 267,
@@ -463,10 +463,10 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "VRAM Capacity & Type": "16 GB GDDR6 (256-bit Bus + 64MB Infinity Cache)",
-        "Card Dimensions (Length)": "267 mm Length × 110 mm Width (2.5-Slot)",
+        "Card Dimensions (Length)": "267 mm Length Ã— 110 mm Width (2.5-Slot)",
         "Thermal Design Power (TDP)": "263W (Dual 8-Pin PCIe Power)",
         "Recommended PSU Capacity": "650W+ Power Supply",
-        "Display Outputs": "2× DisplayPort 2.1, 2× HDMI 2.1"
+        "Display Outputs": "2Ã— DisplayPort 2.1, 2Ã— HDMI 2.1"
       },
       features: [
         "DisplayPort 2.1 support for ultra-high-bandwidth next-gen monitors",
@@ -491,8 +491,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 95,
       releaseOrder: 1,
-      image: "assets/images/products/mobo-asus-x870e.svg",
-      keySpec: "Socket AM5 • DDR5 • ATX • 18+2+2 Power Stages • PCIe 5.0",
+      image: "assets/images/products/mobo-asus-x870e.jpg",
+      keySpec: "Socket AM5 â€¢ DDR5 â€¢ ATX â€¢ 18+2+2 Power Stages â€¢ PCIe 5.0",
       shortDesc: "Enthusiast Socket AM5 ATX motherboard engineered with 18+2+2 110A power stages, five M.2 slots with massive aluminum heatsinks, and dual USB4 40Gbps ports.",
       compat: {
         socket: "AM5",
@@ -502,10 +502,10 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "CPU Socket": "AMD Socket AM5 (Ryzen 9000 / 8000 / 7000 Series)",
-        "Memory Standard": "4× DIMM DDR5, Max 192GB (Supports AMD EXPO up to DDR5-8000+)",
-        "Form Factor": "Standard ATX (305 mm × 244 mm)",
-        "Expansion Slots": "2× PCIe 5.0 x16 SafeSlots with Q-Release Slim",
-        "Storage Interfaces": "3× PCIe 5.0 M.2 + 2× PCIe 4.0 M.2 + 4× SATA 6Gb/s",
+        "Memory Standard": "4Ã— DIMM DDR5, Max 192GB (Supports AMD EXPO up to DDR5-8000+)",
+        "Form Factor": "Standard ATX (305 mm Ã— 244 mm)",
+        "Expansion Slots": "2Ã— PCIe 5.0 x16 SafeSlots with Q-Release Slim",
+        "Storage Interfaces": "3Ã— PCIe 5.0 M.2 + 2Ã— PCIe 4.0 M.2 + 4Ã— SATA 6Gb/s",
         "Networking": "Wi-Fi 7 (802.11be) + 5Gb + 2.5Gb Dual Ethernet"
       },
       features: [
@@ -529,8 +529,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 92,
       releaseOrder: 2,
-      image: "assets/images/products/mobo-msi-b650m.svg",
-      keySpec: "Socket AM5 • DDR5 • Micro-ATX • 12+2+1 VRM • Wi-Fi 6E",
+      image: "assets/images/products/mobo-msi-b650m.jpg",
+      keySpec: "Socket AM5 â€¢ DDR5 â€¢ Micro-ATX â€¢ 12+2+1 VRM â€¢ Wi-Fi 6E",
       shortDesc: "Compact Micro-ATX AM5 motherboard delivering heavyweight 80A Smart Power Stage VRMs, dual M.2 Shield Frozr slots, and 2.5G LAN for clean mATX and mid-tower builds.",
       compat: {
         socket: "AM5",
@@ -540,9 +540,9 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "CPU Socket": "AMD Socket AM5",
-        "Memory Standard": "4× DIMM DDR5, Dual-Channel up to DDR5-7600+ (OC)",
-        "Form Factor": "Micro-ATX (244 mm × 244 mm)",
-        "Storage": "2× M.2 PCIe 4.0 x4 Slots + 6× SATA 6Gb/s Ports",
+        "Memory Standard": "4Ã— DIMM DDR5, Dual-Channel up to DDR5-7600+ (OC)",
+        "Form Factor": "Micro-ATX (244 mm Ã— 244 mm)",
+        "Storage": "2Ã— M.2 PCIe 4.0 x4 Slots + 6Ã— SATA 6Gb/s Ports",
         "Networking": "Realtek 2.5Gbps LAN + Wi-Fi 6E + Bluetooth 5.3"
       },
       features: [
@@ -566,8 +566,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 88,
       releaseOrder: 3,
-      image: "assets/images/products/mobo-gigabyte-z790.svg",
-      keySpec: "Socket LGA1700 • DDR5 • E-ATX • 10GbE LAN & Wi-Fi 7",
+      image: "assets/images/products/mobo-gigabyte-z790.jpg",
+      keySpec: "Socket LGA1700 â€¢ DDR5 â€¢ E-ATX â€¢ 10GbE LAN & Wi-Fi 7",
       shortDesc: "Workstation-caliber E-ATX motherboard for Intel LGA1700 processors featuring 20+1+2 direct digital VRM phases, Marvell 10GbE LAN, and finned-array thermal armor.",
       compat: {
         socket: "LGA1700",
@@ -577,9 +577,9 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "CPU Socket": "Intel Socket LGA1700 (14th / 13th / 12th Gen Core)",
-        "Memory Standard": "4× DIMM DDR5 (Supports Intel XMP 3.0 up to DDR5-8266)",
-        "Form Factor": "E-ATX (305 mm × 260 mm — Requires E-ATX compatible Cabinet)",
-        "Storage": "1× PCIe 5.0 M.2 + 4× PCIe 4.0 M.2 Slots",
+        "Memory Standard": "4Ã— DIMM DDR5 (Supports Intel XMP 3.0 up to DDR5-8266)",
+        "Form Factor": "E-ATX (305 mm Ã— 260 mm â€” Requires E-ATX compatible Cabinet)",
+        "Storage": "1Ã— PCIe 5.0 M.2 + 4Ã— PCIe 4.0 M.2 Slots",
         "Networking": "10GbE Base-T Ethernet + Wi-Fi 7"
       },
       features: [
@@ -603,8 +603,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 84,
       releaseOrder: 4,
-      image: "assets/images/products/mobo-asus-b760.svg",
-      keySpec: "Socket LGA1700 • DDR4 Support • ATX • PCIe 5.0 x16",
+      image: "assets/images/products/mobo-asus-b760.jpg",
+      keySpec: "Socket LGA1700 â€¢ DDR4 Support â€¢ ATX â€¢ PCIe 5.0 x16",
       shortDesc: "Dependable LGA1700 ATX motherboard engineered specifically for DDR4 memory kits, enabling cost-effective gaming rigs with PCIe 5.0 GPU support and three M.2 slots.",
       compat: {
         socket: "LGA1700",
@@ -614,9 +614,9 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "CPU Socket": "Intel Socket LGA1700",
-        "Memory Standard": "4× DIMM DDR4 Only (Up to 128GB DDR4-5333 OC)",
-        "Form Factor": "Standard ATX (305 mm × 244 mm)",
-        "Expansion": "1× PCIe 5.0 x16 Slot + 3× PCIe 4.0 M.2 Slots",
+        "Memory Standard": "4Ã— DIMM DDR4 Only (Up to 128GB DDR4-5333 OC)",
+        "Form Factor": "Standard ATX (305 mm Ã— 244 mm)",
+        "Expansion": "1Ã— PCIe 5.0 x16 Slot + 3Ã— PCIe 4.0 M.2 Slots",
         "Compatibility Note": "Requires DDR4 RAM modules (Not compatible with DDR5 RAM)"
       },
       features: [
@@ -642,8 +642,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 94,
       releaseOrder: 1,
-      image: "assets/images/products/ram-corsair-64gb-ddr5.svg",
-      keySpec: "64GB (2×32GB) • DDR5-6400 • CL32 • Forged Aluminum",
+      image: "assets/images/products/ram-corsair-64gb-ddr5.jpg",
+      keySpec: "64GB (2Ã—32GB) â€¢ DDR5-6400 â€¢ CL32 â€¢ Forged Aluminum",
       shortDesc: "Precision-forged die-cast aluminum DDR5 dual-channel kit featuring hand-screened memory ICs, patented DHX cooling, and dual Intel XMP 3.0 / AMD EXPO profiles.",
       compat: {
         ramType: "DDR5",
@@ -652,8 +652,8 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "Memory Standard": "DDR5 Desktop UDIMM (288-Pin)",
-        "Kit Capacity": "64 GB (2 × 32 GB Dual-Channel Kit)",
-        "Tested Speed & Latency": "6400 MT/s • CL32-40-40-84 @ 1.40V",
+        "Kit Capacity": "64 GB (2 Ã— 32 GB Dual-Channel Kit)",
+        "Tested Speed & Latency": "6400 MT/s â€¢ CL32-40-40-84 @ 1.40V",
         "Profile Support": "Intel XMP 3.0 & AMD EXPO Dual Profiles",
         "Module Height": "57 mm (Swappable Top Fin Bar)"
       },
@@ -679,8 +679,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 97,
       releaseOrder: 2,
-      image: "assets/images/products/ram-kingston-32gb-ddr5.svg",
-      keySpec: "32GB (2×16GB) • DDR5-6000 • CL30 • 34.9mm Low Profile",
+      image: "assets/images/products/ram-kingston-32gb-ddr5.jpg",
+      keySpec: "32GB (2Ã—16GB) â€¢ DDR5-6000 â€¢ CL30 â€¢ 34.9mm Low Profile",
       shortDesc: "Ultra-tight CL30 timing DDR5-6000 kit with a compact 34.9mm low-profile heatspreader designed to clear large dual-tower air coolers effortlessly.",
       compat: {
         ramType: "DDR5",
@@ -689,8 +689,8 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "Memory Standard": "DDR5 Desktop UDIMM (288-Pin)",
-        "Kit Capacity": "32 GB (2 × 16 GB Dual-Channel Kit)",
-        "Tested Speed & Latency": "6000 MT/s • CL30-36-36 @ 1.35V",
+        "Kit Capacity": "32 GB (2 Ã— 16 GB Dual-Channel Kit)",
+        "Tested Speed & Latency": "6000 MT/s â€¢ CL30-36-36 @ 1.35V",
         "Profile Support": "AMD EXPO & Intel XMP 3.0 Certified",
         "Module Height": "34.9 mm Low-Profile Clearance"
       },
@@ -715,8 +715,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 85,
       releaseOrder: 3,
-      image: "assets/images/products/ram-corsair-32gb-ddr4.svg",
-      keySpec: "32GB (2×16GB) • DDR4-3600 • CL18 • 34mm Low Profile",
+      image: "assets/images/products/ram-corsair-32gb-ddr4.jpg",
+      keySpec: "32GB (2Ã—16GB) â€¢ DDR4-3600 â€¢ CL18 â€¢ 34mm Low Profile",
       shortDesc: "Proven pure-aluminum low-profile DDR4-3600 memory kit tailored for DDR4 motherboards (such as B760 D4 and AM4 systems).",
       compat: {
         ramType: "DDR4",
@@ -725,8 +725,8 @@ window.BYTEFORGE_DATA = {
       },
       specs: {
         "Memory Standard": "DDR4 Desktop UDIMM (288-Pin DDR4 Keying)",
-        "Kit Capacity": "32 GB (2 × 16 GB Dual-Channel Kit)",
-        "Tested Speed & Latency": "3600 MT/s • CL18-22-22-42 @ 1.35V",
+        "Kit Capacity": "32 GB (2 Ã— 16 GB Dual-Channel Kit)",
+        "Tested Speed & Latency": "3600 MT/s â€¢ CL18-22-22-42 @ 1.35V",
         "Compatibility Note": "For DDR4 Motherboards Only (Not compatible with DDR5 slots)"
       },
       features: [
@@ -752,8 +752,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 99,
       releaseOrder: 1,
-      image: "assets/images/products/ssd-samsung-990pro-2tb.svg",
-      keySpec: "2TB M.2 2280 • PCIe 4.0 NVMe • Up to 7,450 MB/s Read",
+      image: "assets/images/products/ssd-samsung-990pro-2tb.jpg",
+      keySpec: "2TB M.2 2280 â€¢ PCIe 4.0 NVMe â€¢ Up to 7,450 MB/s Read",
       shortDesc: "Flagship PCIe 4.0 M.2 NVMe solid state drive delivering up to 7,450 MB/s sequential reads and 1,400K IOPS random performance for instant asset streaming.",
       compat: {
         interface: "M.2 NVMe",
@@ -761,7 +761,7 @@ window.BYTEFORGE_DATA = {
         tdpWatts: 9
       },
       specs: {
-        "Form Factor & Interface": "M.2 2280 • PCIe Gen 4.0 x4, NVMe 2.0",
+        "Form Factor & Interface": "M.2 2280 â€¢ PCIe Gen 4.0 x4, NVMe 2.0",
         "Capacity": "2 TB (2,000 GB)",
         "Sequential Read / Write": "Up to 7,450 MB/s Read / 6,900 MB/s Write (Illustrative)",
         "DRAM Cache": "2 GB Low-Power DDR4 Onboard DRAM Cache",
@@ -789,8 +789,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 91,
       releaseOrder: 2,
-      image: "assets/images/products/ssd-kingston-renegade-4tb.svg",
-      keySpec: "4TB M.2 2280 • 7,300 MB/s • Aluminum Heatsink",
+      image: "assets/images/products/ssd-kingston-renegade-4tb.jpg",
+      keySpec: "4TB M.2 2280 â€¢ 7,300 MB/s â€¢ Aluminum Heatsink",
       shortDesc: "High-capacity 4TB NVMe workstation drive equipped with a low-profile graphene-aluminum heatsink and Phison E18 controller for massive project libraries.",
       compat: {
         interface: "M.2 NVMe",
@@ -798,7 +798,7 @@ window.BYTEFORGE_DATA = {
         tdpWatts: 10
       },
       specs: {
-        "Form Factor & Interface": "M.2 2280 • PCIe 4.0 x4 NVMe",
+        "Form Factor & Interface": "M.2 2280 â€¢ PCIe 4.0 x4 NVMe",
         "Capacity": "4 TB (4,000 GB)",
         "Sequential Read / Write": "Up to 7,300 MB/s Read / 7,000 MB/s Write (Illustrative)",
         "Endurance Rating": "4,000 TBW High-Endurance 3D TLC NAND"
@@ -823,8 +823,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 83,
       releaseOrder: 3,
-      image: "assets/images/products/ssd-samsung-870evo-2tb.svg",
-      keySpec: "2TB 2.5-Inch SATA III • 560 MB/s • DRAM Cache",
+      image: "assets/images/products/ssd-samsung-870evo-2tb.jpg",
+      keySpec: "2TB 2.5-Inch SATA III â€¢ 560 MB/s â€¢ DRAM Cache",
       shortDesc: "Reliable 2.5-inch SATA III solid state drive ideal for secondary mass storage, archival project vaults, or expanding storage without occupying M.2 slots.",
       compat: {
         interface: "SATA III",
@@ -832,7 +832,7 @@ window.BYTEFORGE_DATA = {
         tdpWatts: 5
       },
       specs: {
-        "Form Factor & Interface": "2.5-Inch (7mm) • SATA 6 Gb/s",
+        "Form Factor & Interface": "2.5-Inch (7mm) â€¢ SATA 6 Gb/s",
         "Capacity": "2 TB",
         "Sequential Read / Write": "Up to 560 MB/s Read / 530 MB/s Write",
         "DRAM Cache": "2 GB LPDDR4 DRAM"
@@ -859,18 +859,18 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 95,
       releaseOrder: 1,
-      image: "assets/images/products/psu-corsair-rm1000x.svg",
-      keySpec: "1000W • 80 PLUS Gold • ATX 3.1 & Native 12V-2x6",
-      shortDesc: "1000W fully modular ATX 3.1 power supply featuring patented side-mounted Type-5 micro-fit connectors and 105°C-rated Japanese electrolytic capacitors.",
+      image: "assets/images/products/psu-corsair-rm1000x.jpg",
+      keySpec: "1000W â€¢ 80 PLUS Gold â€¢ ATX 3.1 & Native 12V-2x6",
+      shortDesc: "1000W fully modular ATX 3.1 power supply featuring patented side-mounted Type-5 micro-fit connectors and 105Â°C-rated Japanese electrolytic capacitors.",
       compat: {
         psuWatts: 1000,
         atxStandard: "ATX 3.1",
         tdpWatts: 0
       },
       specs: {
-        "Continuous Output": "1000 Watts Continuous @ 50°C",
+        "Continuous Output": "1000 Watts Continuous @ 50Â°C",
         "Efficiency Certification": "80 PLUS Gold & Cybenetics A- Acoustic Rating",
-        "ATX / PCIe Standard": "ATX 3.1 Compliant • Native 600W PCIe 5.1 12V-2x6 Cable Included",
+        "ATX / PCIe Standard": "ATX 3.1 Compliant â€¢ Native 600W PCIe 5.1 12V-2x6 Cable Included",
         "Cooling Fan": "140mm Fluid Dynamic Bearing Fan with Zero RPM Mode"
       },
       features: [
@@ -894,8 +894,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 92,
       releaseOrder: 2,
-      image: "assets/images/products/psu-msi-a850g.svg",
-      keySpec: "850W • 80 PLUS Gold • Native 16-Pin PCIe 5.0 • 140mm",
+      image: "assets/images/products/psu-msi-a850g.jpg",
+      keySpec: "850W â€¢ 80 PLUS Gold â€¢ Native 16-Pin PCIe 5.0 â€¢ 140mm",
       shortDesc: "Compact 140mm-deep 850W 80 PLUS Gold modular PSU with a dual-color 16-pin 12V-2x6 connector that visually confirms full seating into your graphics card.",
       compat: {
         psuWatts: 850,
@@ -905,7 +905,7 @@ window.BYTEFORGE_DATA = {
       specs: {
         "Continuous Output": "850 Watts",
         "Efficiency Certification": "80 PLUS Gold Certified",
-        "Dimensions": "140 mm (L) × 150 mm (W) × 86 mm (H)",
+        "Dimensions": "140 mm (L) Ã— 150 mm (W) Ã— 86 mm (H)",
         "GPU Power Connector": "High-Visibility Dual-Tone 16-Pin 12V-2x6 (600W Rated)"
       },
       features: [
@@ -928,8 +928,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 85,
       releaseOrder: 3,
-      image: "assets/images/products/psu-cm-mwe650.svg",
-      keySpec: "650W • 80 PLUS Gold • Fully Modular • 120mm HDB Fan",
+      image: "assets/images/products/psu-cm-mwe650.jpg",
+      keySpec: "650W â€¢ 80 PLUS Gold â€¢ Fully Modular â€¢ 120mm HDB Fan",
       shortDesc: "Dependable 650W 80 PLUS Gold fully modular power supply designed for mid-range gaming systems with a 120mm Hydro Dynamic Bearing fan.",
       compat: {
         psuWatts: 650,
@@ -943,7 +943,7 @@ window.BYTEFORGE_DATA = {
         "Note": "Ideal for systems up to ~480W peak draw (Not intended for 450W flagship GPUs)"
       },
       features: [
-        "Includes 2× EPS 8-pin CPU connectors for modern motherboards",
+        "Includes 2Ã— EPS 8-pin CPU connectors for modern motherboards",
         "Quiet 120mm HDB fan with thermal-sensing RPM curve"
       ],
       variants: [
@@ -964,8 +964,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 96,
       releaseOrder: 1,
-      image: "assets/images/products/case-corsair-5000d.svg",
-      keySpec: "Supports E-ATX / ATX / mATX • Max GPU 400mm • 360mm AIO",
+      image: "assets/images/products/case-corsair-5000d.jpg",
+      keySpec: "Supports E-ATX / ATX / mATX â€¢ Max GPU 400mm â€¢ 360mm AIO",
       shortDesc: "Spacious high-airflow steel and tempered glass chassis supporting E-ATX motherboards, up to 400mm flagship graphics cards, and dual 360mm radiators.",
       compat: {
         supportedFormFactors: ["E-ATX", "ATX", "Micro-ATX"],
@@ -973,11 +973,11 @@ window.BYTEFORGE_DATA = {
         tdpWatts: 0
       },
       specs: {
-        "Motherboard Support": "E-ATX (up to 305mm × 277mm), ATX, Micro-ATX, Mini-ITX",
+        "Motherboard Support": "E-ATX (up to 305mm Ã— 277mm), ATX, Micro-ATX, Mini-ITX",
         "Maximum GPU Length Clearance": "400 mm (Accommodates all triple-fan RTX 4090 cards)",
         "Maximum CPU Cooler Height": "170 mm",
-        "Radiator Compatibility": "Front: up to 360mm • Top: up to 360mm • Side: up to 360mm",
-        "Front I/O Panel": "1× USB 3.2 Gen 2 Type-C, 2× USB 3.2 Gen 1 Type-A, Audio Combo"
+        "Radiator Compatibility": "Front: up to 360mm â€¢ Top: up to 360mm â€¢ Side: up to 360mm",
+        "Front I/O Panel": "1Ã— USB 3.2 Gen 2 Type-C, 2Ã— USB 3.2 Gen 1 Type-A, Audio Combo"
       },
       features: [
         "RapidRoute cable management channel with 25mm depth behind the motherboard tray",
@@ -1001,8 +1001,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 89,
       releaseOrder: 2,
-      image: "assets/images/products/case-cm-nr200p.svg",
-      keySpec: "Supports ATX / mATX • Max GPU 360mm • Polygonal Mesh",
+      image: "assets/images/products/case-cm-nr200p.jpg",
+      keySpec: "Supports ATX / mATX â€¢ Max GPU 360mm â€¢ Polygonal Mesh",
       shortDesc: "Geometric FineMesh mid-tower supporting standard ATX and Micro-ATX motherboards with 360mm GPU clearance and removable top radiator bracket.",
       compat: {
         supportedFormFactors: ["ATX", "Micro-ATX"],
@@ -1013,7 +1013,7 @@ window.BYTEFORGE_DATA = {
         "Motherboard Support": "Standard ATX, Micro-ATX, Mini-ITX (Does not support wide E-ATX)",
         "Maximum GPU Length Clearance": "360 mm",
         "Maximum CPU Cooler Height": "165 mm",
-        "Included Fans": "3× 120mm CF120 Pre-Installed Intake Fans"
+        "Included Fans": "3Ã— 120mm CF120 Pre-Installed Intake Fans"
       },
       features: [
         "Completely removable top panel simplifies 360mm AIO radiator installation",
@@ -1035,8 +1035,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 93,
       releaseOrder: 3,
-      image: "assets/images/products/case-asus-ap201.svg",
-      keySpec: "Micro-ATX Only • Max GPU 315mm • 33L Compact Footprint",
+      image: "assets/images/products/case-asus-ap201.jpg",
+      keySpec: "Micro-ATX Only â€¢ Max GPU 315mm â€¢ 33L Compact Footprint",
       shortDesc: "Minimalist 33-liter compact Micro-ATX mesh workstation and gaming chassis crafted with 57,000 precision-machined 1.5mm airflow perforations.",
       compat: {
         supportedFormFactors: ["Micro-ATX"],
@@ -1046,7 +1046,7 @@ window.BYTEFORGE_DATA = {
       specs: {
         "Motherboard Support": "Micro-ATX & Mini-ITX Only (Does NOT fit full-size ATX or E-ATX boards)",
         "Maximum GPU Length Clearance": "315 mm Standard (Check GPU length before pairing!)",
-        "Dimensions": "350 mm (H) × 205 mm (W) × 460 mm (D) • 33L Volume",
+        "Dimensions": "350 mm (H) Ã— 205 mm (W) Ã— 460 mm (D) â€¢ 33L Volume",
         "Radiator Support": "Supports up to 360mm Top AIO Cooler"
       },
       features: [
@@ -1073,8 +1073,8 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 94,
       releaseOrder: 1,
-      image: "assets/images/products/cooler-corsair-h150i.svg",
-      keySpec: "360mm AIO Liquid • 2.1\" IPS Temp Display • 300W TDP Rated",
+      image: "assets/images/products/cooler-corsair-h150i.jpg",
+      keySpec: "360mm AIO Liquid â€¢ 2.1\" IPS Temp Display â€¢ 300W TDP Rated",
       shortDesc: "High-capacity 360mm liquid CPU cooler with a split-flow copper cold plate, hidden-cable fan daisy chaining, and real-time coolant/CPU temperature LCD.",
       compat: {
         supportedSockets: ["AM5", "LGA1700"],
@@ -1082,10 +1082,10 @@ window.BYTEFORGE_DATA = {
         tdpWatts: 18
       },
       specs: {
-        "Radiator Dimensions": "397 mm × 120 mm × 27 mm Aluminum (360mm Class)",
-        "Supported CPU Sockets": "AMD Socket AM5 / AM4 • Intel Socket LGA1700 / LGA1851",
+        "Radiator Dimensions": "397 mm Ã— 120 mm Ã— 27 mm Aluminum (360mm Class)",
+        "Supported CPU Sockets": "AMD Socket AM5 / AM4 â€¢ Intel Socket LGA1700 / LGA1851",
         "Thermal Capacity Rating": "Up to 300W TDP (Handles Ryzen 9 9950X & Core i9-14900K)",
-        "Pump Display": "2.1-Inch IPS LCD (480×480 @ 60Hz) for Hardware Telemetry"
+        "Pump Display": "2.1-Inch IPS LCD (480Ã—480 @ 60Hz) for Hardware Telemetry"
       },
       features: [
         "Single-cable daisy-chain architecture eliminates fan wire clutter",
@@ -1108,8 +1108,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 88,
       releaseOrder: 2,
-      image: "assets/images/products/cooler-cm-hyper622.svg",
-      keySpec: "Dual-Tower Air • 6 Copper Heatpipes • 157mm Height • 260W",
+      image: "assets/images/products/cooler-cm-hyper622.jpg",
+      keySpec: "Dual-Tower Air â€¢ 6 Copper Heatpipes â€¢ 157mm Height â€¢ 260W",
       shortDesc: "All-black anodized dual-tower air cooler with six nickel-plated copper heatpipes and dual 120mm PWM fans, standing at a case-friendly 157mm height.",
       compat: {
         supportedSockets: ["AM5", "LGA1700"],
@@ -1117,13 +1117,13 @@ window.BYTEFORGE_DATA = {
         tdpWatts: 10
       },
       specs: {
-        "Cooler Architecture": "Dual Fin-Stack Tower with 6× 6mm Copper Heatpipes",
-        "Supported CPU Sockets": "AMD AM5 / AM4 • Intel LGA1700 / 1200",
+        "Cooler Architecture": "Dual Fin-Stack Tower with 6Ã— 6mm Copper Heatpipes",
+        "Supported CPU Sockets": "AMD AM5 / AM4 â€¢ Intel LGA1700 / 1200",
         "Overall Height": "157 mm (Clears virtually all mATX and Mid-Tower cases)",
         "Thermal Capacity Rating": "Up to 260W TDP"
       },
       features: [
-        "Zero pump failure risk — pure mechanical air cooling longevity",
+        "Zero pump failure risk â€” pure mechanical air cooling longevity",
         "Adjustable front fan mounting clips to clear taller RAM modules"
       ],
       variants: [
@@ -1144,8 +1144,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 87,
       releaseOrder: 1,
-      image: "assets/images/products/fans-corsair-qx120.svg",
-      keySpec: "3× 120mm Pack • 480–2400 RPM • 3.8 mm-H2O Static Pressure",
+      image: "assets/images/products/fans-corsair-qx120.jpg",
+      keySpec: "3Ã— 120mm Pack â€¢ 480â€“2400 RPM â€¢ 3.8 mm-H2O Static Pressure",
       shortDesc: "Triple-pack of 120mm PWM fans featuring Magnetic Dome bearings, built-in rear exhaust temperature sensors, and bridge connectors that snap fans together without wires.",
       compat: {
         fanSizeMm: 120,
@@ -1153,9 +1153,9 @@ window.BYTEFORGE_DATA = {
         tdpWatts: 12
       },
       specs: {
-        "Fan Size & Quantity": "3 × 120mm × 25mm PWM Fans",
-        "Rotational Speed": "480 – 2,400 RPM + Zero RPM Mode",
-        "Airflow & Static Pressure": "63.1 CFM • 3.8 mm-H2O",
+        "Fan Size & Quantity": "3 Ã— 120mm Ã— 25mm PWM Fans",
+        "Rotational Speed": "480 â€“ 2,400 RPM + Zero RPM Mode",
+        "Airflow & Static Pressure": "63.1 CFM â€¢ 3.8 mm-H2O",
         "Bearing Type": "Magnetic Dome Low-Friction Bearing"
       },
       features: [
@@ -1178,8 +1178,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 82,
       releaseOrder: 2,
-      image: "assets/images/products/fans-cm-mobius140.svg",
-      keySpec: "140mm PWM • Interconnected Ring Blades • <= 30 dBA",
+      image: "assets/images/products/fans-cm-mobius140.jpg",
+      keySpec: "140mm PWM â€¢ Interconnected Ring Blades â€¢ <= 30 dBA",
       shortDesc: "Acoustic-engineered 140mm chassis fan utilizing an outer ring-blade stabilizer to eliminate blade tip resonance at high static pressure.",
       compat: {
         fanSizeMm: 140,
@@ -1187,8 +1187,8 @@ window.BYTEFORGE_DATA = {
         tdpWatts: 6
       },
       specs: {
-        "Fan Size": "140mm × 140mm × 25mm",
-        "Speed Range": "0 – 1,900 RPM PWM",
+        "Fan Size": "140mm Ã— 140mm Ã— 25mm",
+        "Speed Range": "0 â€“ 1,900 RPM PWM",
         "Airflow": "76.5 CFM @ 30 dBA Max Acoustic Output",
         "Bearing": "Loop Dynamic Bearing (LDB)"
       },
@@ -1215,16 +1215,16 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 99,
       releaseOrder: 1,
-      image: "assets/images/products/monitor-asus-pg32ucdm.svg",
-      keySpec: "32\" 4K UHD (3840×2160) • 240Hz QD-OLED • 0.03ms • USB-C 90W",
+      image: "assets/images/products/monitor-asus-pg32ucdm.jpg",
+      keySpec: "32\" 4K UHD (3840Ã—2160) â€¢ 240Hz QD-OLED â€¢ 0.03ms â€¢ USB-C 90W",
       shortDesc: "Third-generation 32-inch 4K 240Hz QD-OLED display featuring a custom passive graphene heatsink, 99% DCI-P3 factory-calibrated accuracy (Delta E < 2), and KVM switch.",
       compat: {},
       specs: {
         "Panel Size & Type": "31.5-Inch Flat 3rd-Gen QD-OLED Panel",
-        "Native Resolution & Refresh": "3840 × 2160 (4K UHD) @ 240Hz",
-        "Response Time & Contrast": "0.03 ms (GTG) • 1,500,000:1 Contrast • DisplayHDR True Black 400",
-        "Color Gamut": "99% DCI-P3 • True 10-bit • Factory Calibrated Delta E < 2",
-        "Video & Data Connectivity": "2× HDMI 2.1, 1× DisplayPort 1.4 (DSC), 1× USB-C (DP Alt + 90W PD)"
+        "Native Resolution & Refresh": "3840 Ã— 2160 (4K UHD) @ 240Hz",
+        "Response Time & Contrast": "0.03 ms (GTG) â€¢ 1,500,000:1 Contrast â€¢ DisplayHDR True Black 400",
+        "Color Gamut": "99% DCI-P3 â€¢ True 10-bit â€¢ Factory Calibrated Delta E < 2",
+        "Video & Data Connectivity": "2Ã— HDMI 2.1, 1Ã— DisplayPort 1.4 (DSC), 1Ã— USB-C (DP Alt + 90W PD)"
       },
       features: [
         "Custom fanless heatsink and back-panel graphene film reduce burn-in risk",
@@ -1247,15 +1247,15 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 90,
       releaseOrder: 2,
-      image: "assets/images/products/monitor-msi-mag274qrf.svg",
-      keySpec: "27\" WQHD (2560×1440) • 180Hz Rapid IPS • 98% DCI-P3",
+      image: "assets/images/products/monitor-msi-mag274qrf.jpg",
+      keySpec: "27\" WQHD (2560Ã—1440) â€¢ 180Hz Rapid IPS â€¢ 98% DCI-P3",
       shortDesc: "Versatile 27-inch 1440p Rapid IPS monitor enhanced with a Quantum Dot layer for wide color gamut coverage, 180Hz refresh rate, and 4-way ergonomic stand.",
       compat: {},
       specs: {
         "Panel Size & Type": "27-Inch Rapid IPS with Quantum Dot Film",
-        "Resolution & Refresh Rate": "2560 × 1440 (WQHD) @ 180Hz",
-        "Response Time": "1 ms GTG • Adaptive-Sync Compatible",
-        "Connectivity": "1× DisplayPort 1.4a, 2× HDMI 2.0b, 1× USB Type-C (65W PD)"
+        "Resolution & Refresh Rate": "2560 Ã— 1440 (WQHD) @ 180Hz",
+        "Response Time": "1 ms GTG â€¢ Adaptive-Sync Compatible",
+        "Connectivity": "1Ã— DisplayPort 1.4a, 2Ã— HDMI 2.0b, 1Ã— USB Type-C (65W PD)"
       },
       features: [
         "Height, tilt, swivel, and 90-degree vertical pivot ergonomic stand included",
@@ -1279,9 +1279,9 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 95,
       releaseOrder: 1,
-      image: "assets/images/products/kb-asus-azoth.svg",
-      keySpec: "75% Layout • Silicone Gasket Mount • Tri-Mode Wireless • Hot-Swap",
-      shortDesc: "Enthusiast 75% mechanical keyboard blending custom keyboard acoustics—three-layer Poron/silicone dampening, factory-lubed switches, and hot-swap sockets—with low-latency 2.4GHz wireless.",
+      image: "assets/images/products/kb-asus-azoth.jpg",
+      keySpec: "75% Layout â€¢ Silicone Gasket Mount â€¢ Tri-Mode Wireless â€¢ Hot-Swap",
+      shortDesc: "Enthusiast 75% mechanical keyboard blending custom keyboard acousticsâ€”three-layer Poron/silicone dampening, factory-lubed switches, and hot-swap socketsâ€”with low-latency 2.4GHz wireless.",
       compat: {},
       specs: {
         "Form Factor": "75% Compact Layout (81 Keys + 3-Way Control Knob)",
@@ -1312,18 +1312,18 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 89,
       releaseOrder: 2,
-      image: "assets/images/products/kb-razer-huntsman-v3.svg",
-      keySpec: "Tenkeyless (TKL) • Rapid Trigger Analog Optical • 0.1–4.0mm",
+      image: "assets/images/products/kb-razer-huntsman-v3.jpg",
+      keySpec: "Tenkeyless (TKL) â€¢ Rapid Trigger Analog Optical â€¢ 0.1â€“4.0mm",
       shortDesc: "Tournament tenkeyless keyboard powered by Gen-2 Analog Optical Switches with onboard Rapid Trigger mode and adjustable actuation from 0.1mm to 4.0mm.",
       compat: {},
       specs: {
         "Form Factor": "Tenkeyless (TKL) + Multi-Function Digital Dial",
         "Switch Technology": "Razer Analog Optical Switches Gen-2 (100M Keystroke Rating)",
         "Actuation Range": "Adjustable 0.1 mm to 4.0 mm with 0.1mm Rapid Trigger Reset",
-        "Keycaps & Frame": "Textured Doubleshot PBT Keycaps • 5052 Brushed Aluminum Top"
+        "Keycaps & Frame": "Textured Doubleshot PBT Keycaps â€¢ 5052 Brushed Aluminum Top"
       },
       features: [
-        "On-the-fly actuation and Rapid Trigger adjustment using the LED array—no software required",
+        "On-the-fly actuation and Rapid Trigger adjustment using the LED arrayâ€”no software required",
         "Magnetic leatherette ergonomic wrist rest included"
       ],
       variants: [
@@ -1344,15 +1344,15 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 98,
       releaseOrder: 1,
-      image: "assets/images/products/mouse-logitech-superlight2.svg",
-      keySpec: "60g Ultralight • HERO 2 32K Sensor • LIGHTFORCE Optical-Mech",
+      image: "assets/images/products/mouse-logitech-superlight2.jpg",
+      keySpec: "60g Ultralight â€¢ HERO 2 32K Sensor â€¢ LIGHTFORCE Optical-Mech",
       shortDesc: "Refined 60-gram wireless precision mouse featuring hybrid optical-mechanical switches, USB-C charging, 95-hour battery life, and sub-micron HERO 2 tracking.",
       compat: {},
       specs: {
-        "Weight & Dimensions": "60 Grams • 125 mm × 63.5 mm × 40 mm",
-        "Sensor Architecture": "HERO 2 Optical (100 – 32,000 DPI • >500 IPS • 40G)",
+        "Weight & Dimensions": "60 Grams â€¢ 125 mm Ã— 63.5 mm Ã— 40 mm",
+        "Sensor Architecture": "HERO 2 Optical (100 â€“ 32,000 DPI â€¢ >500 IPS â€¢ 40G)",
         "Main Switches": "LIGHTFORCE Hybrid Optical-Mechanical Switches",
-        "Polling Rate & Battery": "Up to 4,000 Hz Wireless Polling • 95 Hours Battery Life"
+        "Polling Rate & Battery": "Up to 4,000 Hz Wireless Polling â€¢ 95 Hours Battery Life"
       },
       features: [
         "Zero-additive virgin PTFE glide feet for smooth, predictable friction",
@@ -1375,12 +1375,12 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 94,
       releaseOrder: 2,
-      image: "assets/images/products/mouse-razer-viper-v3.svg",
-      keySpec: "54g Symmetrical • Focus Pro 35K Gen-2 • 8000Hz Dongle Included",
+      image: "assets/images/products/mouse-razer-viper-v3.jpg",
+      keySpec: "54g Symmetrical â€¢ Focus Pro 35K Gen-2 â€¢ 8000Hz Dongle Included",
       shortDesc: "54-gram symmetrical wireless mouse with Focus Pro 35K Gen-2 optical sensor, smooth-touch matte coating, and included 8000Hz HyperPolling wireless receiver.",
       compat: {},
       specs: {
-        "Weight": "54 Grams (Solid Shell — No Honeycomb Holes)",
+        "Weight": "54 Grams (Solid Shell â€” No Honeycomb Holes)",
         "Sensor": "Focus Pro 35K Optical Sensor Gen-2 (1-DPI Step Adjustments)",
         "Wireless Polling": "Native 8,000 Hz HyperPolling Dongle Included in Box"
       },
@@ -1406,14 +1406,14 @@ window.BYTEFORGE_DATA = {
       featured: true,
       popularity: 92,
       releaseOrder: 1,
-      image: "assets/images/products/headset-logitech-pro-x2.svg",
-      keySpec: "50mm Graphene Drivers • Wireless + Bluetooth + 3.5mm • 50h Battery",
+      image: "assets/images/products/headset-logitech-pro-x2.jpg",
+      keySpec: "50mm Graphene Drivers â€¢ Wireless + Bluetooth + 3.5mm â€¢ 50h Battery",
       shortDesc: "Closed-back studio and esports headset built with rigid 50mm graphene diaphragms for ultra-low distortion, aluminum yokes, and rotating memory-foam earpads.",
       compat: {},
       specs: {
-        "Audio Drivers": "50 mm Graphene Diaphragm Drivers (20 Hz – 20 kHz)",
+        "Audio Drivers": "50 mm Graphene Diaphragm Drivers (20 Hz â€“ 20 kHz)",
         "Connectivity": "2.4GHz LIGHTSPEED Wireless, Bluetooth 5.3, 3.5mm Analog Cable",
-        "Battery Life & Range": "Up to 50 Hours Continuous • 30m Wireless Range",
+        "Battery Life & Range": "Up to 50 Hours Continuous â€¢ 30m Wireless Range",
         "Microphone": "Detachable 6mm Cardioid Boom Mic with Blue VO!CE Processing"
       },
       features: [
@@ -1438,15 +1438,15 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 85,
       releaseOrder: 1,
-      image: "assets/images/products/speakers-razer-nommo-v2.svg",
-      keySpec: "2.1 System • 3\" Aluminum Phase-Plug Drivers + 5.5\" Wireless Sub",
+      image: "assets/images/products/speakers-razer-nommo-v2.jpg",
+      keySpec: "2.1 System â€¢ 3\" Aluminum Phase-Plug Drivers + 5.5\" Wireless Sub",
       shortDesc: "Full-range 2.1 desktop acoustic system pairing dual 3-inch neodymium satellite monitors with a wireless 5.5-inch down-firing subwoofer for clean desk cable management.",
       compat: {},
       specs: {
-        "Satellite Drivers": "2 × 3-Inch Full-Range Drivers with Aluminum Phase Plugs",
+        "Satellite Drivers": "2 Ã— 3-Inch Full-Range Drivers with Aluminum Phase Plugs",
         "Subwoofer": "5.5-Inch Down-Firing Wireless Subwoofer",
         "Connectivity": "USB Type-C to PC + Bluetooth 5.3",
-        "Frequency Response": "40 Hz – 20,000 Hz"
+        "Frequency Response": "40 Hz â€“ 20,000 Hz"
       },
       features: [
         "Aluminum phase plugs minimize internal sound reflections inside each satellite cylinder",
@@ -1470,12 +1470,12 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 88,
       releaseOrder: 1,
-      image: "assets/images/products/mousepad-corsair-mm700.svg",
-      keySpec: "930mm × 400mm × 4mm • Spill-Proof Micro-Weave • Stitched Edge",
-      shortDesc: "Expansive 930×400mm desktop surface with a 4mm plush natural rubber base, spill-repellent coating, and precision 360-degree anti-fray perimeter stitching.",
+      image: "assets/images/products/mousepad-corsair-mm700.jpg",
+      keySpec: "930mm Ã— 400mm Ã— 4mm â€¢ Spill-Proof Micro-Weave â€¢ Stitched Edge",
+      shortDesc: "Expansive 930Ã—400mm desktop surface with a 4mm plush natural rubber base, spill-repellent coating, and precision 360-degree anti-fray perimeter stitching.",
       compat: {},
       specs: {
-        "Dimensions": "930 mm (W) × 400 mm (D) × 4 mm (Thickness)",
+        "Dimensions": "930 mm (W) Ã— 400 mm (D) Ã— 4 mm (Thickness)",
         "Surface Material": "High-Density 300-Thread-Count Micro-Weave Textile",
         "Base": "Non-Slip Textured Natural Rubber"
       },
@@ -1501,14 +1501,14 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 86,
       releaseOrder: 1,
-      image: "assets/images/products/webcam-logitech-mx-brio.svg",
-      keySpec: "4K UHD 30fps / 1080p 60fps • 8.5MP Sony STARVIS • Aluminum",
+      image: "assets/images/products/webcam-logitech-mx-brio.jpg",
+      keySpec: "4K UHD 30fps / 1080p 60fps â€¢ 8.5MP Sony STARVIS â€¢ Aluminum",
       shortDesc: "Flagship low-light 4K webcam machined from anodized aluminum with an 8.5MP Sony STARVIS sensor, mechanical rotary privacy shutter, and Show Mode desk tilt.",
       compat: {},
       specs: {
-        "Resolution & Frame Rate": "4K Ultra HD (3840×2160) @ 30fps • 1080p FHD @ 60fps",
-        "Sensor & Optics": "8.5MP Sony STARVIS Sensor • Multi-Element Glass Lens",
-        "Field of View": "Adjustable 90° / 78° / 65° dFOV",
+        "Resolution & Frame Rate": "4K Ultra HD (3840Ã—2160) @ 30fps â€¢ 1080p FHD @ 60fps",
+        "Sensor & Optics": "8.5MP Sony STARVIS Sensor â€¢ Multi-Element Glass Lens",
+        "Field of View": "Adjustable 90Â° / 78Â° / 65Â° dFOV",
         "Interface": "USB-C 3.0 (Detachable Braided Cable)"
       },
       features: [
@@ -1533,8 +1533,8 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 87,
       releaseOrder: 1,
-      image: "assets/images/products/controller-razer-wolverine.svg",
-      keySpec: "Anti-Drift Hall Effect Thumbsticks • 4 Mouse-Click Back Paddles",
+      image: "assets/images/products/controller-razer-wolverine.jpg",
+      keySpec: "Anti-Drift Hall Effect Thumbsticks â€¢ 4 Mouse-Click Back Paddles",
       shortDesc: "Pro-grade wireless controller featuring magnetic Hall-effect thumbsticks, microswitch Hair Trigger locks, four ergonomic back paddles, and 1000Hz wired PC tournament mode.",
       compat: {},
       specs: {
@@ -1565,14 +1565,14 @@ window.BYTEFORGE_DATA = {
       featured: false,
       popularity: 84,
       releaseOrder: 1,
-      image: "assets/images/products/net-asus-rt-be96u.svg",
-      keySpec: "Wi-Fi 7 (802.11be) • 320MHz Channels • Dual 10G + Quad 2.5G LAN",
+      image: "assets/images/products/net-asus-rt-be96u.jpg",
+      keySpec: "Wi-Fi 7 (802.11be) â€¢ 320MHz Channels â€¢ Dual 10G + Quad 2.5G LAN",
       shortDesc: "High-throughput Wi-Fi 7 network backbone with Multi-Link Operation (MLO), 4096-QAM modulation, and dual 10-Gigabit Ethernet ports for NAS and low-latency gaming rigs.",
       compat: {},
       specs: {
         "Wireless Standard": "IEEE 802.11be Quad-Band Wi-Fi 7 (6GHz + Dual 5GHz + 2.4GHz)",
-        "Channel Bandwidth": "320 MHz Ultrawide Channels • 4096-QAM",
-        "Wired Ethernet Ports": "2× 10Gbps WAN/LAN + 4× 2.5Gbps LAN + 1× 1Gbps Port",
+        "Channel Bandwidth": "320 MHz Ultrawide Channels â€¢ 4096-QAM",
+        "Wired Ethernet Ports": "2Ã— 10Gbps WAN/LAN + 4Ã— 2.5Gbps LAN + 1Ã— 1Gbps Port",
         "Processor & Memory": "2.6 GHz Quad-Core 64-Bit CPU + 2GB DDR4 RAM"
       },
       features: [
@@ -1585,4 +1585,5 @@ window.BYTEFORGE_DATA = {
     }
   ]
 };
+
 

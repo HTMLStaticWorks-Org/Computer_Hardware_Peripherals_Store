@@ -451,8 +451,8 @@
     // Gallery Setup (3 Views: Primary Studio, Dimensional Schematic, Thermal/Bus Architecture)
     const galleryViews = [
       { src: product.image, caption: "Studio Hardware View" },
-      { src: "assets/images/products/view-schematic.svg", caption: "CAD Clearance Profile" },
-      { src: "assets/images/products/view-architecture.svg", caption: "Thermal & Bus Topology" }
+      { src: "assets/images/products/view-schematic.jpg", caption: "CAD Clearance Profile" },
+      { src: "assets/images/products/view-architecture.jpg", caption: "Thermal & Bus Topology" }
     ];
 
     const mainImg = document.getElementById("bf-detail-main-img");

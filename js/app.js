@@ -808,6 +808,95 @@
     onScroll();
   }
 
+  /* -------------------- Back To Top Floating Action Button -------------------- */
+  function initBackToTop() {
+    let btn = document.querySelector(".back-to-top");
+    if (!btn) {
+      btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "back-to-top";
+      btn.setAttribute("aria-label", "Scroll back to top");
+      btn.setAttribute("title", "Back to top");
+      btn.innerHTML = `<svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"></path></svg>`;
+      document.body.appendChild(btn);
+    }
+
+    const toggleBtnVisibility = () => {
+      if (window.scrollY > 280) {
+        btn.classList.add("visible");
+      } else {
+        btn.classList.remove("visible");
+      }
+    };
+
+    window.addEventListener("scroll", toggleBtnVisibility, { passive: true });
+    toggleBtnVisibility();
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+
+  /* -------------------- Active Navigation Highlighting -------------------- */
+  function syncActiveNavLinks() {
+    let currentPath = window.location.pathname.split("/").pop() || "index.html";
+    if (currentPath === "" || currentPath === "/") {
+      currentPath = "index.html";
+    }
+
+    // Clear active classes from desktop nav links
+    document.querySelectorAll(".nav-menu .nav-link").forEach((link) => {
+      link.classList.remove("active");
+    });
+
+    // Clear active classes from mobile drawer
+    document.querySelectorAll(".mobile-nav-item").forEach((item) => {
+      item.classList.remove("active");
+    });
+    document.querySelectorAll(".mobile-nav-row").forEach((row) => {
+      row.classList.remove("active");
+    });
+    document.querySelectorAll(".mobile-submenu-link").forEach((link) => {
+      link.classList.remove("active");
+    });
+
+    // 1. Desktop Nav Highlighting
+    const desktopLinks = document.querySelectorAll(".nav-menu .nav-link");
+    desktopLinks.forEach((link) => {
+      const href = (link.getAttribute("href") || "").split("#")[0].split("?")[0];
+      if (href === currentPath || (currentPath === "home-2.html" && href === "index.html")) {
+        link.classList.add("active");
+      }
+    });
+
+    // 2. Mobile Nav Drawer Links
+    const mobileRows = document.querySelectorAll(".mobile-nav-list a.mobile-nav-row");
+    mobileRows.forEach((row) => {
+      const href = (row.getAttribute("href") || "").split("#")[0].split("?")[0];
+      if (href === currentPath) {
+        row.classList.add("active");
+        const parentItem = row.closest(".mobile-nav-item");
+        if (parentItem) parentItem.classList.add("active");
+      }
+    });
+
+    const mobileSubLinks = document.querySelectorAll(".mobile-submenu-link");
+    mobileSubLinks.forEach((link) => {
+      const href = (link.getAttribute("href") || "").split("#")[0].split("?")[0];
+      if (href === currentPath) {
+        link.classList.add("active");
+        const parentItem = link.closest(".mobile-nav-item");
+        if (parentItem) {
+          parentItem.classList.add("active");
+          parentItem.classList.add("expanded");
+        }
+      }
+    });
+  }
+
   /* -------------------- Public API -------------------- */
   window.ByteForge = {
     DATA,
@@ -832,6 +921,8 @@
     injectSharedOverlays();
     initNavigationAndEvents();
     initHeaderScroll();
+    initBackToTop();
+    syncActiveNavLinks();
     hydrateHomepages();
     syncWishlistUI();
     syncCartUI();
