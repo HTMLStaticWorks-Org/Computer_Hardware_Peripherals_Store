@@ -1647,12 +1647,21 @@
 
 .page-hero-compact {
   text-align: center;
+  height: 250px;
   min-height: 250px;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: var(--space-8) 0;
+  padding: 0 !important;
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .page-hero-compact {
+    height: auto !important;
+    min-height: 220px !important;
+    padding: var(--space-8) 0 !important;
+  }
 }
 
 .page-hero-compact .container {
