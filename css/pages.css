@@ -1651,7 +1651,7 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: var(--space-10) 0;
+  padding: var(--space-8) 0;
   box-sizing: border-box;
 }
 
@@ -1665,6 +1665,13 @@
   justify-content: center !important;
   text-align: center !important;
   width: 100%;
+}
+
+.page-hero-compact .section-title {
+  font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+  line-height: 1.25;
+  margin-bottom: 6px;
+  text-align: center;
 }
 
 .page-hero-compact .section-subtitle {
