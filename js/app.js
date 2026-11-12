@@ -841,53 +841,109 @@
   }
 
   /* -------------------- Active Navigation Highlighting -------------------- */
-  function syncActiveNavLinks() {
-    let currentPath = window.location.pathname.split("/").pop() || "index.html";
-    if (currentPath === "" || currentPath === "/") {
-      currentPath = "index.html";
-    }
+  function normalizeNavPage(rawPath) {
+    const clean = String(rawPath || "").split("#")[0].split("?")[0].split(/[\\/]/).pop().trim().toLowerCase();
+    if (!clean) return "index.html";
+    return clean.includes(".") ? clean : `${clean}.html`;
+  }
 
-    // Clear active classes from desktop nav links
-    document.querySelectorAll(".nav-menu .nav-link").forEach((link) => {
-      link.classList.remove("active");
+  function queriesMatch(hrefQuery, currentSearch) {
+    if (!hrefQuery) return true;
+    if (!currentSearch) return false;
+    const hrefParams = new URLSearchParams(hrefQuery);
+    const curParams = new URLSearchParams(currentSearch);
+    for (const [k, v] of hrefParams.entries()) {
+      if ((curParams.get(k) || "").toLowerCase() !== v.toLowerCase()) return false;
+    }
+    return true;
+  }
+
+  function syncActiveNavLinks() {
+    const currentPath = normalizeNavPage(window.location.pathname);
+    const currentSearch = window.location.search || "";
+    const hasFilterQuery = Boolean(new URLSearchParams(currentSearch).get("category") || new URLSearchParams(currentSearch).get("brand"));
+
+    // Clear active states across desktop nav, dropdowns, and mobile drawer
+    document.querySelectorAll(".nav-menu .nav-link, .nav-menu .dropdown-link, .nav-menu .dropdown-footer a").forEach((el) => {
+      el.classList.remove("active");
+      el.removeAttribute("aria-current");
     });
 
-    // Clear active classes from mobile drawer
     document.querySelectorAll(".mobile-nav-item").forEach((item) => {
       item.classList.remove("active");
     });
-    document.querySelectorAll(".mobile-nav-row").forEach((row) => {
-      row.classList.remove("active");
-    });
-    document.querySelectorAll(".mobile-submenu-link").forEach((link) => {
-      link.classList.remove("active");
+    document.querySelectorAll(".mobile-nav-row, .mobile-submenu-link").forEach((el) => {
+      el.classList.remove("active");
+      el.removeAttribute("aria-current");
     });
 
-    // 1. Desktop Nav Highlighting
-    const desktopLinks = document.querySelectorAll(".nav-menu .nav-link");
-    desktopLinks.forEach((link) => {
-      const href = (link.getAttribute("href") || "").split("#")[0].split("?")[0];
-      if (href === currentPath || (currentPath === "home-2.html" && href === "index.html")) {
+    // 1. Desktop Top-Level Nav Highlighting
+    document.querySelectorAll(".nav-menu .nav-link").forEach((link) => {
+      const hrefPath = normalizeNavPage(link.getAttribute("href"));
+      if (
+        hrefPath === currentPath ||
+        (currentPath === "home-2.html" && hrefPath === "index.html") ||
+        (currentPath === "product-details.html" && hrefPath === "products.html")
+      ) {
         link.classList.add("active");
+        link.setAttribute("aria-current", "page");
       }
     });
 
-    // 2. Mobile Nav Drawer Links
-    const mobileRows = document.querySelectorAll(".mobile-nav-list a.mobile-nav-row");
-    mobileRows.forEach((row) => {
-      const href = (row.getAttribute("href") || "").split("#")[0].split("?")[0];
-      if (href === currentPath) {
+    // 2. Desktop Dropdown Links Highlighting (Home-1, Home-2, Brands, Products)
+    document.querySelectorAll(".nav-menu .dropdown-link, .nav-menu .dropdown-footer a").forEach((link) => {
+      const rawHref = link.getAttribute("href") || "";
+      const [filePart, queryPart] = rawHref.split("#")[0].split("?");
+      const hrefPath = normalizeNavPage(filePart);
+      const hrefQuery = queryPart ? `?${queryPart}` : "";
+
+      let isMatch = false;
+      if (hrefPath === currentPath) {
+        if (hrefQuery) {
+          isMatch = queriesMatch(hrefQuery, currentSearch);
+        } else if (currentPath !== "products.html" || !hasFilterQuery) {
+          isMatch = true;
+        }
+      } else if (currentPath === "product-details.html" && hrefPath === "products.html" && !hrefQuery) {
+        isMatch = true;
+      }
+
+      if (isMatch) {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+      }
+    });
+
+    // 3. Mobile Nav Drawer Top-Level Direct Links
+    document.querySelectorAll(".mobile-nav-list a.mobile-nav-row").forEach((row) => {
+      const hrefPath = normalizeNavPage(row.getAttribute("href"));
+      if (hrefPath === currentPath) {
         row.classList.add("active");
+        row.setAttribute("aria-current", "page");
         const parentItem = row.closest(".mobile-nav-item");
         if (parentItem) parentItem.classList.add("active");
       }
     });
 
-    const mobileSubLinks = document.querySelectorAll(".mobile-submenu-link");
-    mobileSubLinks.forEach((link) => {
-      const href = (link.getAttribute("href") || "").split("#")[0].split("?")[0];
-      if (href === currentPath) {
+    // 4. Mobile Submenu Links (Home-1, Home-2, Products, Brands)
+    document.querySelectorAll(".mobile-submenu-link").forEach((link) => {
+      const rawHref = link.getAttribute("href") || "";
+      const [filePart, queryPart] = rawHref.split("#")[0].split("?");
+      const hrefPath = normalizeNavPage(filePart);
+      const hrefQuery = queryPart ? `?${queryPart}` : "";
+
+      let isMatch = false;
+      if (hrefPath === currentPath) {
+        if (hrefQuery) {
+          isMatch = queriesMatch(hrefQuery, currentSearch);
+        } else if (currentPath !== "products.html" || !hasFilterQuery) {
+          isMatch = true;
+        }
+      }
+
+      if (isMatch) {
         link.classList.add("active");
+        link.setAttribute("aria-current", "page");
         const parentItem = link.closest(".mobile-nav-item");
         if (parentItem) {
           parentItem.classList.add("active");
